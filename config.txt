@@ -117,6 +117,11 @@ bottomShadeHeight = 14
 dipFade = 0.7
 dipHold = 0.25
 
+# --- TRAILER thumbnail: the photo on the Trailer page before anyone presses play ---
+# Upload the photo next to this file and put its file name here. To swap it later, upload a new
+# photo with the SAME name (or change the name). Best: 16:9 landscape, 1280 wide, under 300 KB.
+trailerThumb = fam.jpg
+
 # --- TRAILER: paste a YouTube or Vimeo link (the video must allow embedding) ---
 # While this is blank, the Trailer page shows a "coming soon" placeholder player.
 # trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX
