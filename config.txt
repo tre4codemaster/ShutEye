@@ -92,11 +92,11 @@ showTrailer = true
 showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
+showStills = true
 showNews = true
-showWatch = false
+showWatch = true
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
@@ -126,7 +126,7 @@ trailerThumb = fam.jpg
 
 # --- TRAILER: paste a YouTube or Vimeo link (the video must allow embedding) ---
 # While this is blank, the Trailer page shows a "coming soon" placeholder player.
-# trailer = https://vimeo.com/1046639116
+# trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX
 
 # --- SYNOPSIS (placeholder paragraphs and quick facts are switched off with a # until you have real text; remove the # to turn them on) ---
 # The big line at the top of the Synopsis page. Later, swap Coming Soon for your hook, e.g.:
