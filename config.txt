@@ -28,7 +28,7 @@ link = Follow | https://instagram.com/shuteyethemovie
 # --- Timing in seconds ---
 heroDelay = 0.8
 heroDissolve = 7
-logoDelay = 5
+logoDelay = 4
 logoFade = 3.5
 contentDelay = 3
 # navDelay = seconds after the photo starts fading in that the page menu + footer appear (logo comes at heroDelay + logoDelay, so keep this smaller)
@@ -259,17 +259,17 @@ voicemail = Ranger Station | 6:02 PM | This is an automated notice. The north ro
 sms = Karl | Karl | 8:41 PM | You still coming up tonight?
 sms = Karl | Martha | 8:44 PM | Leaving now. Be there by ten.
 sms = Karl | Karl | 8:45 PM | Don't take the shortcut.
-sms = Bea | Bea | 7:10 PM | Do you hear that? Like someone humming
-sms = Bea | Martha | 7:12 PM | It's the wind, Bea. Go to sleep.
-sms = Bea | Bea | 7:13 PM | It's not the wind
+sms = Bea | Bea | 7:10 PM | Please stop trying to call me!
+sms = Bea | Martha | 7:12 PM | We need to talk, Bea. 
+sms = Bea | Bea | 7:13 PM | Go to hell!
 
 # EASTER EGGS:  egg = code | Hidden message
 # code = a number to dial on the keypad (type it, then press the green call key), OR tap a part of the phone:
 #   signal  satellite  battery  led  speaker      (tap the signal bars, the satellite icon, the battery, the blinking light, the earpiece)
 # PLACEHOLDER eggs: replace with your own.
 egg = 911 | No service. Nobody can hear you out here.
-egg = 1111 | You are not the first to call this number.
-egg = 0000 | Hello, Martha.
+egg = 111 | You are not the first to call this number.
+egg = 000 | Hello, Martha.
 egg = satellite | 0 satellites in range. One is watching anyway.
 egg = signal | Signal: none. But something is still transmitting.
 egg = battery | Battery: {battery}%. It keeps dropping, and nobody is using it.
