@@ -187,6 +187,7 @@ cast = Macleay Bolgatz | Matt Bonet
 cast = Raiden Kam | Josh
 
 # --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
+crew = Director | Arnaldo Mirabal
 crew = Producer | Carlo Carere
 crew = Producer | Erin Carere
 crew = Associate Producer | Jason Andrew
