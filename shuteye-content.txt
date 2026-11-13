@@ -21,7 +21,7 @@
 #   Website: https://yoursite.com/images/
 # Using Google Drive instead? Leave base empty and paste each image's
 # Drive share link into the lines below.
-base = https://raw.githubusercontent.com/YOURNAME/YOURREPO/main/images/
+base = https://github.com/tre4codemaster/ShutEye/tree/main/images
 background = background.jpg
 # Title picture shown on the experience site (leave empty to show the name in text)
 logo = logo.webp
