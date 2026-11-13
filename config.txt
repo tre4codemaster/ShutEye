@@ -272,9 +272,12 @@ egg = 1111 | You are not the first to call this number.
 egg = 0000 | Hello, Martha.
 egg = satellite | 0 satellites in range. One is watching anyway.
 egg = signal | Signal: none. But something is still transmitting.
-egg = battery | Battery: 97%. It has been 97% since you got here.
+egg = battery | Battery: {battery}%. It keeps dropping, and nobody is using it.
 egg = led | It blinks in time with something breathing.
 egg = speaker | ...stay on the line.
+# Optional: the LAST egg (code = final). It shows by itself once someone has found all the others.
+egg = final | You found them all. Now go back to the trailhead.
+# {battery} in an egg message shows the phone's battery level.
 
 # --- NEWS (newest first): news = Date | Headline | Text | optional link ---
 news = Nov 12, 2026 | Shuteye website launches | The official site is live. More news soon.
