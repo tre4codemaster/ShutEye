@@ -1,0 +1,336 @@
+# SHUTEYE CONFIG — upload this file to your GitHub repo's assets folder.
+# Edit, save (commit) on GitHub, and your site updates in about 5 minutes.
+# Lines starting with # are ignored. Delete a line (or put # in front) to go back to the built-in default.
+
+# --- Images & music (file names inside the same GitHub folder, or a full https:// link) ---
+# hero = my-new-photo.jpg
+# logo = my-new-logo.png
+# audio = theme.mp3
+
+# --- Show or hide (true / false) ---
+showTagline = true
+showBadge = true
+showLinks = false
+
+# --- Text ---
+tagline = You can sleep when | you're dead.
+# The | splits the tagline into two lines on phones only (on desktop it stays one line). Remove the | for no split.
+# Box under the tagline (set showBadge = false above to hide it, or change the words here)
+badgeText = Coming Soon
+
+# --- Label shown on placeholder stills, cast photos and the trailer box ---
+comingSoon = Coming Soon
+
+# --- Buttons (one per line: link = Label | URL). To hide the buttons entirely, set showLinks = false above ---
+link = Watch Trailer | https://youtube.com/
+link = Follow | https://instagram.com/shuteyethemovie
+
+# --- Timing in seconds ---
+heroDelay = 0.8
+heroDissolve = 7
+logoDelay = 5
+logoFade = 3.5
+contentDelay = 3
+# navDelay = seconds after the photo starts fading in that the page menu + footer appear (logo comes at heroDelay + logoDelay, so keep this smaller)
+navDelay = 3
+
+# --- Small logo above the ENTER button ---
+# --- PHONE OPENING: the opening screen is the satellite phone getting an emergency call. Tap/click it to "answer" and start. ---
+# phoneGate = false goes back to the plain logo + ENTER button.
+phoneGate = false
+# Words on the phone screen:
+phoneAlert = EMERGENCY
+phoneSub = INCOMING CALL
+# Small labels on the phone's two screen buttons (leave phoneRight blank for none):
+phoneLeft = Answer
+# phoneRight = Ignore
+# Line under the phone:
+phoneHint = Tap to answer
+# phoneShake = false stops the phone buzzing
+phoneShake = true
+# Swap the phone picture: upload a transparent PNG to GitHub and put its name here (the screen area must stay in the same spot):
+# phoneImage = phone.png
+
+# gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
+gateLogo = true
+gateLogoWidth = min(46vw, 200px)
+
+# --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
+# logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
+logoSound = true
+logoSoundVolume = 1
+logoSoundDelay = 0
+# Blank = the built-in sound (a louder version of what_01.mp3). To use a file hosted here instead, upload it next to this file and remove the #:
+# logoSoundFile = what_01.mp3
+
+# --- Home photo movement ---
+# heroMotion = false: the photo stays still and just dissolves in. true = it slowly drifts/zooms while it appears.
+heroMotion = false
+
+# --- Home photo: leave "hero =" commented out to use the built-in photo. To host your own on GitHub,
+# upload hero.jpg next to this file and remove the # on the next line. ---
+# hero = hero.jpg
+
+# --- Crop / reposition the photo ---
+# heroZoom: 1 = whole photo, 1.15 = 15% closer, 1.3 = 30% closer
+# heroShiftY: negative moves the picture UP (e.g. -6), positive moves it down
+# heroShiftX: negative moves it left, positive moves it right
+# Tip: shifting needs some zoom (at least 1.1) or a black edge will show.
+heroZoom = 1
+heroShiftY = 0
+heroShiftX = 0
+
+# --- Fog (slow, subtle drifting mist) ---
+# fogOpacity: 0.2 = barely there, 0.35 = subtle, 0.6 = thick
+# fogSpeed: 1 = very slow, 2 = twice as fast, 0.5 = half as fast
+fog = false
+fogOpacity = 0.35
+fogSpeed = 1
+
+# --- Look ---
+logoWidth = min(70vw, 760px)
+logoBottom = 14vh
+heroFocus = 50% 15%
+dust = true
+# dustSpeed: how fast the dust drifts (1 = slow, 2.5 = default, 5 = fast). Some specks float upward in random directions.
+dustSpeed = 2.5
+
+# --- Music ---
+audioVolume = 0.6
+audioFadeSeconds = 6
+
+# --- Troubleshooting: set true to show red error messages on the page ---
+debug = false
+
+# =====================================================================
+# SITE PAGES
+# =====================================================================
+# =====================================================================
+# --- MENU GROUPS (nested menu): navgroup = Menu Name | page, page, page ---
+# Those pages move into a dropdown under that name. Pages not listed stay as normal menu items.
+# The group sits where its first page would be. Hidden pages (show... = false) are left out; a group with one page left is shown as a plain link.
+# Page names: trailer synopsis cast crew stills phone news watch awards press contact
+# navGroups = false turns ALL grouping off (flat menu, like before).
+navGroups = true
+navgroup = Film | trailer, synopsis, cast, crew, stills
+navgroup = Updates | news, awards, press
+
+# SHOW OR HIDE EACH PAGE: true = it is in the menu, false = hidden.
+# Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
+# The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, Martha's Phone, News, Watch, Awards, Press, Contact.
+# =====================================================================
+showTrailer = true
+showSynopsis = true
+showCast = true
+showCrew = true
+showStills = true
+showPhone = true
+showNews = true
+showWatch = true
+showAwards = false
+showPress = true
+showContact = true
+
+# --- Background photo for all inner pages (blank/commented = built-in photo) ---
+# bg = my-background.jpg
+
+# --- Logo size on the other pages (1 = original, 1.3 = 30% bigger, 1.6 = 60% bigger) ---
+navLogoScale = 1.3
+
+# --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
+# vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
+vignette = 0.2
+
+# --- Dark fade at the bottom of the HOME page (hides the cut-off edge of the photo) ---
+# bottomShade: strength, 0 = none, 0.95 = nearly black at the very bottom, 1 = solid black
+# bottomShadeHeight: how far up it reaches, as % of the screen (45 = bottom 45%, 60 = taller, 30 = shorter)
+bottomShade = 1
+bottomShadeHeight = 14
+
+# --- Dip to black between pages (seconds) ---
+dipFade = 0.7
+dipHold = 0.25
+
+# --- TRAILER thumbnail: the photo on the Trailer page before anyone presses play ---
+# Upload the photo next to this file and put its file name here. To swap it later, upload a new
+# photo with the SAME name (or change the name). Best: 16:9 landscape, 1280 wide, under 300 KB.
+trailerThumb = fam.jpg
+# On phones the trailer becomes tall 9:16 and is cropped to fit. false = keep it wide 16:9.
+trailerPhoneCrop = true
+# Which part of the thumbnail stays in view when cropped (left% up%). 50% 50% = center. Try 30% 50% to shift left.
+trailerFocus = 50% 50%
+
+# --- TRAILER: paste a YouTube or Vimeo link (the video must allow embedding) ---
+# While this is blank, the Trailer page shows a "coming soon" placeholder player.
+trailer = https://vimeo.com/1046639116
+# (YouTube also works: trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX. Leave the line out or put a # in front for "Coming Soon")
+
+# --- SYNOPSIS (placeholder paragraphs and quick facts are switched off with a # until you have real text; remove the # to turn them on) ---
+# The big line at the top of the Synopsis page. Later, swap Coming Soon for your hook, e.g.:
+# logline = You can sleep when you're dead.
+logline = Coming Soon
+# One line per paragraph. Add as many as you like.
+# synopsis = Replace this with the first paragraph of your synopsis.
+# synopsis = Replace this with the second paragraph.
+# Quick facts: fact = Label | Value
+# fact = Genre | Horror
+# fact = Runtime | 90 min
+# fact = Year | 2026
+# fact = Rating | NR
+
+# --- CAST PHOTOS: automatic. Upload a photo to GitHub named after the actor, lowercase with dashes:
+#     dj-qualls.jpg   erin-carere.jpg   carlo-carere.jpg   (.jpg .jpeg .png .webp all work)
+#     The page reads your GitHub file list and matches by name, so DJ Qualls.JPG, dj_qualls.png, DJ-Qualls.jpeg etc. all work too.
+#     It shows up on its own, nothing to edit here. No file = "Coming Soon" box.
+# castPhotos = false hides ALL cast photos. castFolder puts them in a GitHub folder (example: castFolder = cast)
+castPhotos = true
+# castFolder = cast
+# --- CAST: cast = Actor Name | Character | photo file (the photo is OPTIONAL, only use it for a custom file name) ---
+# Hide one actor: put a # at the start of their line.
+cast = DJ Qualls | Ash
+cast = Erin Carere | Martha Bonet
+cast = Carlo Carere | Keres
+cast = Zac Titus | Karl Bonet
+cast = James Vallo | Radio Announcer
+cast = Susan Chambers | The Lone Shooter
+cast = Riona Lally | Bea Bonet
+cast = Macleay Bolgatz | Matt Bonet
+cast = Raiden Kam | Josh
+
+# --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
+crew = Producer | Carlo Carere
+crew = Producer | Erin Carere
+crew = Associate Producer | Jason Andrew
+crew = Associate Producer | Josh Burns
+crew = Associate Producer | Jerry L. Buxbaum
+crew = Associate Producer | Jonny Espinoza
+crew = Associate Producer | Trevor Gunter
+crew = Associate Producer | Colter Houston
+crew = Associate Producer | Hatch Houston
+crew = Associate Producer | Matt Houston
+crew = Associate Producer | Anzu Lawson
+crew = Associate Producer | Tommy Marnell
+crew = Cinematographer | Dan Ayers
+crew = Editor | Ken Blackwell
+crew = Composer | Andrea Possee
+crew = Casting Director | Dean E. Fronk
+crew = Costume Designer | Kathleen Swanson
+crew = Key Makeup Artist | Nancy Kam
+crew = Makeup Artist | Lydia Kearns
+crew = First Assistant Director | Adam Matsch
+crew = Second Assistant Director | Barrett Rezac
+crew = Second Second Assistant Director | Robert Towne
+crew = Sound Recordist | Kevin Broman
+crew = Boom Operator | Tim Defoe
+crew = Sound Designer and Foley Supervisor | Gowtham Raju K
+crew = Visual Effects Artist | Joseph Burda
+crew = Visual Effects | Mike Le Han
+crew = Stunt Coordinator | Amanda Steen
+crew = DIT | Reese Avery
+crew = Camera Operator | Dashawn Bedford
+crew = Key Grip | Michael Louis Huffstutler II
+crew = First Assistant Camera | Dexter Johnson
+crew = Score Mixer | Hilgrove Kenrick
+crew = Script Supervisor | Annie Ward
+crew = Production Assistant | Mariah Carter
+crew = Production Assistant | Owen Kircher
+crew = Production Assistant | Ashley Lupton
+crew = Production Assistant | Amaris Ad Maiora
+crew = Production Assistant | Samuel Ortega
+crew = Production Accountant | Keely Yulla Kemp
+crew = Property Master | Shane Hammond
+crew = BTS Photography and Cinematography | Colter Houston
+crew = BTS Photography and Cinematography | Hatch Houston
+crew = BTS Photography and Cinematography | Matt Houston
+crew = Special Thanks | Scott Grenke
+crew = Special Thanks | Calix Lewis Reneau
+crew = Special Thanks | Ethan Tarlow
+crew = Special Thanks | James Vallo
+
+# --- MARTHA'S PHONE page (page name in the menu: phoneTitle). Set showPhone = true / false up in the page switches. ---
+# When someone opens the page the phone flashes EMERGENCY and waits. They press the green call button (or tap the screen) to ANSWER:
+# the flashing stops and the audio message plays. The red hang-up button ends the message early. When it finishes (or is hung up)
+# the phone shows its menu (Messages, Texts).
+# phoneAudio = the audio file you upload to GitHub next to this file (mp3 is best). Leave blank = no audio, it just flashes for phoneFlashSeconds
+# (81 = the length of emergency_01.mp3 in seconds; also used as the backup if the audio file cannot load).
+phoneAudio = emergency_01.mp3
+phoneTitle = Martha's Phone
+# Screen after the call is answered (steady, no flashing):
+phoneAnswerTitle = Emergency Alert
+phoneAnswerSub = ShutEye Response Team
+# Line under the phone while it is flashing:
+phonePageHint = Press the green button to answer
+phoneFlashSeconds = 81
+
+# MESSAGES (voicemail):  voicemail = From | Time | What it says      (newest first, one line each)
+# PLACEHOLDER messages: replace with your own.
+voicemail = Unknown | 11:42 PM | Martha, if you get this, don't go back to the trailhead. Stay where you are. Please. // They can hear the radio.
+voicemail = Karl | 9:15 PM | Hey it's me. Bea says the signal's been dropping again. Call me when you're out of the trees.
+voicemail = Ranger Station | 6:02 PM | This is an automated notice. The north road is closed until further notice.
+
+# TEXTS:  sms = Thread | From | Time | Message      (From = Martha makes it a message SHE sent, shown on the right)
+# PLACEHOLDER texts: replace with your own. Lines with the same Thread name are grouped into one conversation, in order.
+sms = Karl | Karl | 8:41 PM | You still coming up tonight?
+sms = Karl | Martha | 8:44 PM | Leaving now. Be there by ten.
+sms = Karl | Karl | 8:45 PM | Don't take the shortcut.
+sms = Bea | Bea | 7:10 PM | Do you hear that? Like someone humming
+sms = Bea | Martha | 7:12 PM | It's the wind, Bea. Go to sleep.
+sms = Bea | Bea | 7:13 PM | It's not the wind
+
+# EASTER EGGS:  egg = code | Hidden message
+# code = a number to dial on the keypad (type it, then press the green call key), OR tap a part of the phone:
+#   signal  satellite  battery  led  speaker      (tap the signal bars, the satellite icon, the battery, the blinking light, the earpiece)
+# PLACEHOLDER eggs: replace with your own.
+egg = 911 | No service. Nobody can hear you out here.
+egg = 1111 | You are not the first to call this number.
+egg = 0000 | Hello, Martha.
+egg = satellite | 0 satellites in range. One is watching anyway.
+egg = signal | Signal: none. But something is still transmitting.
+egg = battery | Battery: {battery}%. It keeps dropping, and nobody is using it.
+egg = led | It blinks in time with something breathing.
+egg = speaker | ...stay on the line.
+# Optional: the LAST egg (code = final). It shows by itself once someone has found all the others.
+egg = final | You found them all. Now go back to the trailhead.
+# {battery} in an egg message shows the phone's battery level.
+
+# --- NEWS (newest first): news = Date | Headline | Text | optional link ---
+news = Nov 12, 2026 | Shuteye website launches | The official site is live. More news soon.
+
+# --- STILLS (photo gallery): still = file name | Caption ---
+# Upload your photos to the same GitHub folder as this file. To swap a placeholder,
+# upload your own photo with the SAME file name (about a minute to show), or change the name here.
+# While no "still =" line is active (no # in front), the Stills page just says Coming Soon.
+# When your photos are ready: upload them, then remove the # in front of each still line below (or add your own).
+# Click a photo to open it large. Arrows, swipe, or keyboard arrows move between photos.
+# still = still1.jpg | Placeholder still 1
+# still = still2.jpg | Placeholder still 2
+# still = still3.jpg | Placeholder still 3
+# still = still4.jpg | Placeholder still 4
+# still = still5.jpg | Placeholder still 5
+# still = still6.jpg | Placeholder still 6
+
+# --- WATCH: screenings and streaming (page shows "announced soon" while these are empty) ---
+# screening = Date | Event | Location | optional ticket link
+# screening = Mar 14, 2027 | World Premiere | Your Festival, City | https://tickets.example.com
+# stream = Watch on Vimeo | https://vimeo.com/
+# stream = Watch on Amazon | https://amazon.com/
+
+# --- AWARDS (set showAwards = true above to show this page) ---
+# award = Official Selection | Festival Name | 2027
+# quote = A terrifying debut. | Publication Name
+
+# --- PRESS KIT downloads: download = Label | file name in this folder, or a full https:// link ---
+# download = Poster (high-res) | poster.jpg
+# download = Press kit (PDF) | presskit.pdf
+# download = Trailer file | https://vimeo.com/
+
+# --- CONTACT ---
+contactText = For press, festivals and distribution, get in touch.
+email = erincarere@gmail.com
+social = Instagram | https://instagram.com/shuteyethemovie
+social = Facebook | https://www.facebook.com/ShutEyeMovie/
+# Mailing list signup page (Mailchimp, Substack, etc.): signup = Label | link
+# signup = Join the mailing list | https://example.com/signup
+
+# --- Footer line shown at the bottom of each page ---
+copyright = © 2026 Shuteye. All rights reserved.
