@@ -88,12 +88,14 @@ fogOpacity = 0.35
 fogSpeed = 1
 
 # --- Look ---
-# Logo size. It is also automatically kept small enough to sit in the LOWER HALF of the browser window, below the people's faces.
-# logoWidth = width on desktop/tablet. logoWidthPhone = width on phones. logoMaxHeight = tallest the logo may ever be.
+# Text weight: 400 = normal, 600 = semi bold, 700 = bold. (tagline = "You can sleep when you're dead."; nav = the menu buttons)
+taglineWeight = 600
+navWeight = 600
+# Logo size: exactly TWO sizes, no scaling with the browser shape.
+# logoWidth = desktop/tablet (screens wider than 640px). logoWidthPhone = phones. Use px values like 440px.
 # logoBottom = how far up from the bottom edge the logo block sits (keep it clear of the footer text).
-logoWidth = min(36vw, 540px)
-logoWidthPhone = min(64vw, 280px)
-logoMaxHeight = 190px
+logoWidth = 540px
+logoWidthPhone = 350px
 logoBottom = 9vh
 heroFocus = 50% 15%
 dust = true
