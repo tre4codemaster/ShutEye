@@ -88,8 +88,13 @@ fogOpacity = 0.35
 fogSpeed = 1
 
 # --- Look ---
-logoWidth = min(70vw, 760px)
-logoBottom = 14vh
+# Logo size. It is also automatically kept small enough to sit in the LOWER HALF of the browser window, below the people's faces.
+# logoWidth = width on desktop/tablet. logoWidthPhone = width on phones. logoMaxHeight = tallest the logo may ever be.
+# logoBottom = how far up from the bottom edge the logo block sits (keep it clear of the footer text).
+logoWidth = min(36vw, 440px)
+logoWidthPhone = min(64vw, 280px)
+logoMaxHeight = 190px
+logoBottom = 9vh
 heroFocus = 50% 15%
 dust = true
 # dustSpeed: how fast the dust drifts (1 = slow, 2.5 = default, 5 = fast). Some specks float upward in random directions.
