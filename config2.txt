@@ -183,8 +183,8 @@ trailer = https://vimeo.com/1046639116
 # logline = You can sleep when you're dead.
 logline = Coming Soon
 # One line per paragraph. Add as many as you like.
-# synopsis = Replace this with the first paragraph of your synopsis.
-# synopsis = Replace this with the second paragraph.
+# synopsis = When sleep becomes a death sentence, staying awake is the only way to survive.
+# synopsis = After a mysterious neurotoxin spreads through the region, sleep becomes fatal. A family finds themselves fighting to stay awake as exhaustion takes its toll and time runs out. With only 106 hours to find a cure, they must venture into the wilderness in search of a rare plant that may hold the answer. But they're not alone. Two escaped psychiatric patients are also on the loose, turning an already desperate fight for survival into a terrifying nightmare.
 # Quick facts: fact = Label | Value
 # fact = Genre | Horror
 # fact = Runtime | 90 min
