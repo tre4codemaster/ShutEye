@@ -156,6 +156,18 @@ showContact = true
 # --- Logo size on the other pages (1 = original, 1.3 = 30% bigger, 1.6 = 60% bigger) ---
 navLogoScale = 1.3
 
+# --- BIG SCREENS (2K / 4K) ---
+# heroLarge = a bigger version of the home photo that is used ONLY on big screens (so phones and laptops stay fast). Upload it to GitHub next to this file.
+# heroLargeFrom = how many real screen pixels wide before the big photo is used (2600 = roughly a 2K screen and up). Blank heroLarge = always use "hero".
+heroLarge = hero_4k.jpg
+heroLargeFrom = 2600
+# bigScreen = true grows the menu, buttons, text, logo and phone on wide screens so a 4K monitor looks like the 2K one (just sharper).
+# bigScreenFrom = the screen width where growing starts (2560 = 2K). It grows smoothly: a 3840-wide screen grows 1.5x.
+# bigScreenMax = the most it will ever grow (1 = never grow, 1.5 = up to 50% bigger).
+bigScreen = true
+bigScreenFrom = 2560
+bigScreenMax = 1.5
+
 # --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
 # vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
 vignette = 0.2
