@@ -197,7 +197,7 @@ news = Nov 12, 2026 | Shuteye website launches | The official site is live. More
 # Click a photo to open it large. Arrows, swipe, or keyboard arrows move between photos.
 # still = still1.jpg | Placeholder still 1
 # still = still2.jpg | Placeholder still 2
-# still = still3.jpg | Placeholder still 3
+# still = still3.jpg | Placeholder still 
 # still = still4.jpg | Placeholder still 4
 # still = still5.jpg | Placeholder still 5
 # still = still6.jpg | Placeholder still 6
