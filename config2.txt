@@ -53,7 +53,7 @@ phoneShake = true
 
 # gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
 gateLogo = true
-gateLogoWidth = min(46vw, 200px)
+gateLogoWidth = min(46vw, 250px)
 
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
