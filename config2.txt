@@ -5,7 +5,8 @@
 # --- Images & music (file names inside the same GitHub folder, or a full https:// link) ---
 # hero = my-new-photo.jpg
 # logo = my-new-logo.png
-# audio = theme.mp3
+# audio = the ambient sound file (an mp3 uploaded to the same GitHub folder). Plays right after ENTER is clicked.
+audio = shut_ambient.mp3
 
 # --- Show or hide (true / false) ---
 showTagline = true
@@ -109,8 +110,11 @@ dust = true
 dustSpeed = 2.5
 
 # --- Music ---
-audioVolume = 0.6
-audioFadeSeconds = 6
+# audioLoop = false plays the ambient sound ONCE. true repeats it forever (quietly fading in over audioFadeSeconds).
+audioLoop = false
+audioVolume = 0.8
+# Seconds to fade the sound in. 0 = starts right away at full volume.
+audioFadeSeconds = 0
 
 # --- Troubleshooting: set true to show red error messages on the page ---
 debug = false
