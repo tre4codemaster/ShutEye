@@ -70,7 +70,7 @@ link = https://www.youtube.com/shorts/Xe5n1Qoyv_Q
 # the phone screen is small.
 A broadcast no one was meant to hear.
 
-Lost in the fog, a group of rangers must decide who to trust.
+Lost in the fog, a family must find a cure...
 
 (Replace this text with your real synopsis.)
 
@@ -85,12 +85,12 @@ Actor Name | Character
 
 [crew]
 # Job | Name             (one person per line)
-Director | First Last
-Writer | First Last
-Producer | First Last
-Cinematography | First Last
-Music | First Last
-Editor | First Last
+Director | Arnaldo Mirabal
+Writer | Erin Carere and Carlo Carere
+Producer | Trevor Gunter
+Cinematography | Dan
+Music | Andrea
+Editor | Ken
 
 
 [codes]
