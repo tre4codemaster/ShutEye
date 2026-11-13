@@ -81,12 +81,21 @@ debug = false
 # =====================================================================
 # SITE PAGES
 # =====================================================================
-# HIDE A PAGE: delete its word from the pages = line below (or move it to a # comment). Add it back to show it again.
-# The menu shows the pages in the order listed. Hidden pages are not reachable from the menu or by link.
-# Menu order. Remove a word to hide that page. Options: trailer, synopsis, cast, crew, stills, news, watch, awards, press, contact
-# Hidden for now: trailer, stills, watch, press. To bring them back, use the full list:
-# pages = trailer, synopsis, cast, crew, stills, news, watch, press, contact
-pages = synopsis, cast, crew, news, contact
+# =====================================================================
+# SHOW OR HIDE EACH PAGE: true = it is in the menu, false = hidden.
+# Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
+# The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
+# =====================================================================
+showTrailer = true
+showSynopsis = true
+showCast = true
+showCrew = true
+showStills = true
+showNews = true
+showWatch = true
+showAwards = false
+showPress = true
+showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
 # bg = my-background.jpg
@@ -126,7 +135,7 @@ logline = Coming Soon
 # fact = Rating | NR
 
 # --- CAST: cast = Actor Name | Character | photo file (photo optional, upload it next to this file) ---
-cast = DJ Qualls | Ash | 01_dj.jpg
+cast = DJ Qualls | Ash
 cast = Erin Carere | Martha Bonet
 cast = Carlo Carere | Keres
 cast = Zac Titus | Karl Bonet
@@ -197,7 +206,7 @@ news = Nov 12, 2026 | Shuteye website launches | The official site is live. More
 # Click a photo to open it large. Arrows, swipe, or keyboard arrows move between photos.
 # still = still1.jpg | Placeholder still 1
 # still = still2.jpg | Placeholder still 2
-# still = still3.jpg | Placeholder still 
+# still = still3.jpg | Placeholder still 3
 # still = still4.jpg | Placeholder still 4
 # still = still5.jpg | Placeholder still 5
 # still = still6.jpg | Placeholder still 6
@@ -208,7 +217,7 @@ news = Nov 12, 2026 | Shuteye website launches | The official site is live. More
 # stream = Watch on Vimeo | https://vimeo.com/
 # stream = Watch on Amazon | https://amazon.com/
 
-# --- AWARDS (add the word "awards" to pages = above to show this page) ---
+# --- AWARDS (set showAwards = true above to show this page) ---
 # award = Official Selection | Festival Name | 2027
 # quote = A terrifying debut. | Publication Name
 
