@@ -88,6 +88,12 @@ fogOpacity = 0.35
 fogSpeed = 1
 
 # --- Look ---
+# Short browser windows: when the window is shorter than shortScreenHeight (pixels), the home page hides some extras so the logo stays
+# in the lower half, clear of the faces.  shortScreenHide = badge (hides the Coming Soon box) | both (box + tagline) | none (hide nothing)
+shortScreenHide = badge
+shortScreenHeight = 650
+# shortScreenScale = how much the logo and tagline shrink on short windows (0.75 = 25% smaller, 1 = no change, 0.6 = 40% smaller)
+shortScreenScale = 0.75
 # Text weight: 400 = normal, 600 = semi bold, 700 = bold. (tagline = "You can sleep when you're dead."; nav = the menu buttons)
 taglineWeight = 600
 navWeight = 600
