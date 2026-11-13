@@ -88,7 +88,7 @@ debug = false
 # Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
 # The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
 # =====================================================================
-showTrailer = true
+showTrailer = false
 showSynopsis = true
 showCast = true
 showCrew = true
