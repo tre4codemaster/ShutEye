@@ -12,7 +12,7 @@ showTagline = true
 showLinks = false
 
 # --- Text ---
-tagline = Coming Soon 2026
+tagline = Coming Soon
 
 # --- Buttons (one per line: link = Label | URL). To hide the buttons entirely, set showLinks = false above ---
 link = Watch Trailer | https://youtube.com/
@@ -31,7 +31,7 @@ contentDelay = 3
 # heroShiftX: negative moves it left, positive moves it right
 # Tip: shifting needs some zoom (at least 1.1) or a black edge will show.
 heroZoom = 1
-heroShiftY = 0
+heroShiftY = -6
 heroShiftX = 0
 
 # --- Fog (slow, subtle drifting mist) ---
