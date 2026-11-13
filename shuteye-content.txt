@@ -1,0 +1,144 @@
+# =====================================================================
+#  SHUTEYE  -  SITE CONTENT FILE
+# =====================================================================
+#  This is the ONLY file you edit to change the site. Save it and the
+#  website picks up the change by itself (a host that caches the file
+#  can take a few minutes).
+#
+#  RULES
+#   - A line that starts with # is a note and is ignored.
+#   - Keep the [section names] exactly as they are.
+#   - Rows with two parts are written   left | right
+#   - Delete a section (or leave it empty) to keep the built-in text.
+#   - Never start a line of real text with #.
+# =====================================================================
+
+
+[images]
+# base = the web address of the folder that holds your images.
+# Then every photo below is just a file name.  Examples:
+#   GitHub:  https://raw.githubusercontent.com/YOURNAME/YOURREPO/main/images/
+#   Website: https://yoursite.com/images/
+# Using Google Drive instead? Leave base empty and paste each image's
+# Drive share link into the lines below.
+base = https://raw.githubusercontent.com/YOURNAME/YOURREPO/main/images/
+background = background.jpg
+# Title picture shown on the experience site (leave empty to show the name in text)
+logo = logo.webp
+
+
+[movie]
+# Name shown on the HOME screen
+title = SHUTEYE
+# The red box and the line under it on the ringing screen
+alert = EMERGENCY ALERT:
+source = Source: ShutEye Task Force
+# Two lines on the ringing screen, separated by |
+incoming = INCOMING | TAP TO ANSWER
+# The small credits at the bottom of the page: line 1 | line 2
+credits = [STUDIO] presents · a [DIRECTOR] film · starring [ACTOR] · [ACTOR] · [ACTOR] | In theaters [DATE]
+# Other short messages
+# Used by the experience site
+tagline = THE ALERT IS LIVE
+meta = PSYCHOLOGICAL HORROR · COUNTRY · 2026 · 00 MIN
+footer = © [STUDIO] 2026
+# Optional 7th menu item. Paste a store link, or leave empty to hide it.
+merch =
+coming_soon = COMING SOON
+not_in_service = NUMBER NOT IN SERVICE
+
+
+[trailer]
+# Paste a YouTube or Vimeo link after the = sign.
+# Leave it empty and the phone shows "coming soon".
+link =
+
+
+[photos]
+# A file name from your images folder, OR a full image link
+# (a Google Drive share link, Dropbox, GitHub or any website).
+# Add 6 =, 7 = ... for more photos. Empty slots show a numbered frame.
+1 = photo1.jpg
+2 = photo2.jpg
+3 = photo3.jpg
+4 = photo4.jpg
+5 = photo5.jpg
+
+
+[synopsis]
+# A blank line starts a new paragraph. Keep paragraphs short:
+# the phone screen is small.
+A broadcast no one was meant to hear.
+
+Lost in the fog, a group of rangers must decide who to trust.
+
+(Replace this text with your real synopsis.)
+
+
+[cast]
+# Actor | Character      (one person per line)
+Actor Name | D. Royce
+Actor Name | J. Braxton
+Actor Name | Character
+Actor Name | Character
+
+
+[crew]
+# Job | Name             (one person per line)
+Director | First Last
+Writer | First Last
+Producer | First Last
+Cinematography | First Last
+Music | First Last
+Editor | First Last
+
+
+[codes]
+# Hidden numbers visitors can dial on the keypad.
+# 4 digits | title | text      (use  " / "  to start a new line of text)
+0008 | SECRET 0008 | The alert on the phone counts to 00:08 before it cuts out. / (Replace with your real fact.)
+1999 | SECRET 1999 | (Add a fun fact about the production here.)
+2000 | SECRET 2000 | (Add a fun fact about the cast or locations here.)
+
+
+# =====================================================================
+#  SECTIONS USED BY THE EXPERIENCE SITE (shuteye-experience.html)
+# =====================================================================
+
+[intro]
+# Lines typed on the phone screen after the visitor answers, one per line
+A BROADCAST NO ONE WAS MEANT TO HEAR.
+SOMEONE IS LISTENING.
+ANSWER.
+
+
+[headings]
+# Big title at the top of each panel
+trailer = WATCH THE TRAILER
+synopsis = THE STORY
+photos = PHOTOS
+watch = WHERE TO WATCH
+press = PRESS
+credits = CREDITS
+
+
+[facts]
+# Small facts under the synopsis:  LABEL | value
+YEAR | 2026
+RUNTIME | 00 MIN
+COUNTRY | COUNTRY
+DISTRIBUTION | DISTRIBUTOR
+
+
+[watch]
+# The button under the list:  button = LABEL | link
+button = FIND YOUR PLATFORM | 
+# One line per service:  Name | TYPE | short description | link (optional)
+Streaming service | SUBSCRIPTION | Add where people can watch. |
+Digital stores | RENT OR BUY | Add the stores and countries. |
+
+
+[press]
+# One line per review:  quote | SOURCE | link to the review (optional)
+“Add a review quote here.” | PUBLICATION |
+“Add another quote here.” | PUBLICATION |
