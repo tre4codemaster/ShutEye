@@ -9,10 +9,14 @@
 
 # --- Show or hide (true / false) ---
 showTagline = true
+showBadge = true
 showLinks = false
 
 # --- Text ---
-tagline = Coming Soon
+tagline = You can sleep when | you're dead.
+# The | splits the tagline into two lines on phones only (on desktop it stays one line). Remove the | for no split.
+# Box under the tagline (set showBadge = false above to hide it, or change the words here)
+badgeText = Coming Soon
 
 # --- Label shown on placeholder stills, cast photos and the trailer box ---
 comingSoon = Coming Soon
