@@ -126,7 +126,7 @@ logline = Coming Soon
 # fact = Rating | NR
 
 # --- CAST: cast = Actor Name | Character | photo file (photo optional, upload it next to this file) ---
-cast = DJ Qualls | Ash
+cast = DJ Qualls | Ash | 01_dj.jpg
 cast = Erin Carere | Martha Bonet
 cast = Carlo Carere | Keres
 cast = Zac Titus | Karl Bonet
