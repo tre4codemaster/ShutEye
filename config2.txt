@@ -53,7 +53,7 @@ phoneShake = true
 
 # gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
 gateLogo = true
-gateLogoWidth = min(46vw, 250px)
+gateLogoWidth = min(46vw, 200px)
 
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
@@ -181,15 +181,15 @@ trailer = https://vimeo.com/1046639116
 # --- SYNOPSIS (placeholder paragraphs and quick facts are switched off with a # until you have real text; remove the # to turn them on) ---
 # The big line at the top of the Synopsis page. Later, swap Coming Soon for your hook, e.g.:
 # logline = You can sleep when you're dead.
-logline = You can sleep when you're dead.
+logline = Some calls you answer. Some calls answer you.
 # One line per paragraph. Add as many as you like.
-synopsis = When sleep becomes a death sentence, staying awake is the only way to survive.
-synopsis = After a mysterious neurotoxin spreads through the region, sleep becomes fatal. A family finds themselves fighting to stay awake as exhaustion takes its toll and time runs out. With only 106 hours to find a cure, they must venture into the wilderness in search of a rare plant that may hold the answer. But they're not alone. Two escaped psychiatric patients are also on the loose, turning an already desperate fight for survival into a terrifying nightmare.
+synopsis = PLACEHOLDER: A woman's last night on the trail turns into a fight to stay awake when a signal from a dead phone starts calling her by name. Replace this paragraph with the real first paragraph of your synopsis.
+synopsis = PLACEHOLDER: As the hours pass and the woods close in, she learns that the voice on the line knows more about her than anyone alive. Replace this paragraph with the real second paragraph.
 # Quick facts: fact = Label | Value
-# fact = Genre | Horror
-# fact = Runtime | 90 min
-# fact = Year | 2026
-# fact = Rating | NR
+fact = Genre | Horror
+fact = Runtime | 90 min
+fact = Year | 2026
+fact = Rating | NR
 
 # --- CAST PHOTOS: automatic. Upload a photo to GitHub named after the actor, lowercase with dashes:
 #     dj-qualls.jpg   erin-carere.jpg   carlo-carere.jpg   (.jpg .jpeg .png .webp all work)
@@ -274,6 +274,8 @@ phoneAnswerSub = ShutEye Response Team
 # Line under the phone while it is flashing:
 phonePageHint = Press the green button to answer
 phoneFlashSeconds = 81
+# phoneScale = size of the phone on the Martha's Phone page (1 = old size, 1.25 = 25% bigger, 1.5 = 50% bigger)
+phoneScale = 1.25
 
 # MESSAGES (voicemail):  voicemail = From | Time | What it says      (newest first, one line each)
 # PLACEHOLDER messages: replace with your own.
@@ -315,15 +317,19 @@ news = Nov 12, 2026 | Shuteye website launches | The official site is live. More
 # While no "still =" line is active (no # in front), the Stills page just says Coming Soon.
 # When your photos are ready: upload them, then remove the # in front of each still line below (or add your own).
 # Click a photo to open it large. Arrows, swipe, or keyboard arrows move between photos.
-# still = still1.jpg | Placeholder still 1
-# still = still2.jpg | Placeholder still 2
-# still = still3.jpg | Placeholder still 3
-# still = still4.jpg | Placeholder still 4
-# still = still5.jpg | Placeholder still 5
-# still = still6.jpg | Placeholder still 6
+still = still1.jpg | Placeholder still 1: the trailhead
+still = still2.jpg | Placeholder still 2: the call
+still = still3.jpg | Placeholder still 3: the woods at night
+still = still4.jpg | Placeholder still 4: the signal
+still = still5.jpg | Placeholder still 5: don't close your eyes
+still = still6.jpg | Placeholder still 6: the last light
 
 # --- WATCH: screenings and streaming (page shows "announced soon" while these are empty) ---
 # screening = Date | Event | Location | optional ticket link
+# DUMMY screenings at real venues. The events and dates are made up, so replace or delete them.
+screening = Mar 12, 2027 | Premiere Screening + Q&A (dummy) | IFC Center, New York, NY | https://example.com/tickets
+screening = Apr 9, 2027 | Midnight Screening (dummy) | Music Box Theatre, Chicago, IL | https://example.com/tickets
+screening = May 7, 2027 | West Coast Premiere (dummy) | Nuart Theatre, Los Angeles, CA | https://example.com/tickets
 # screening = Mar 14, 2027 | World Premiere | Your Festival, City | https://tickets.example.com
 # stream = Watch on Vimeo | https://vimeo.com/
 # stream = Watch on Amazon | https://amazon.com/
@@ -331,6 +337,12 @@ news = Nov 12, 2026 | Shuteye website launches | The official site is live. More
 # --- AWARDS (set showAwards = true above to show this page) ---
 # award = Official Selection | Festival Name | 2027
 # quote = A terrifying debut. | Publication Name
+
+# --- PRESS RELEASES (shown on the Press page, newest first): release = Date | Headline | Text | optional link ---
+# These three are DUMMY releases. Replace or delete them.
+release = Feb 18, 2027 | Shuteye Announces Spring Theatrical Screenings | FOR IMMEDIATE RELEASE. PLACEHOLDER: The horror feature Shuteye, starring DJ Qualls, will screen at select theatres across the United States this spring. Replace this with your real announcement.
+release = Jan 20, 2027 | Shuteye Trailer Debuts Online | FOR IMMEDIATE RELEASE. PLACEHOLDER: The first trailer for Shuteye is now streaming. Replace this with your real announcement.
+release = Dec 3, 2026 | Shuteye Completes Principal Photography | FOR IMMEDIATE RELEASE. PLACEHOLDER: Filming has wrapped on Shuteye, an original horror feature. Replace this with your real announcement.
 
 # --- PRESS KIT downloads: download = Label | file name in this folder, or a full https:// link ---
 # download = Poster (high-res) | poster.jpg
