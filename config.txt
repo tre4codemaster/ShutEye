@@ -1,0 +1,48 @@
+# SHUTEYE CONFIG — upload this file to your GitHub repo's assets folder.
+# Edit, save (commit) on GitHub, and your site updates in about 5 minutes.
+# Lines starting with # are ignored. Delete a line (or put # in front) to go back to the built-in default.
+
+# --- Images & music (file names inside the same GitHub folder, or a full https:// link) ---
+# hero = my-new-photo.jpg
+# logo = my-new-logo.png
+# audio = theme.mp3
+
+# --- Show or hide (true / false) ---
+showTagline = true
+showLinks = false
+
+# --- Text ---
+tagline = Coming Soon
+
+# --- Buttons (one per line: link = Label | URL). To hide the buttons entirely, set showLinks = false above ---
+link = Watch Trailer | https://youtube.com/
+link = Follow | https://instagram.com/
+
+# --- Timing in seconds ---
+heroDelay = 0.8
+heroDissolve = 7
+logoDelay = 5
+logoFade = 3.5
+contentDelay = 3
+
+# --- Crop / reposition the photo ---
+# heroZoom: 1 = whole photo, 1.15 = 15% closer, 1.3 = 30% closer
+# heroShiftY: negative moves the picture UP (e.g. -6), positive moves it down
+# heroShiftX: negative moves it left, positive moves it right
+# Tip: shifting needs some zoom (at least 1.1) or a black edge will show.
+heroZoom = 1
+heroShiftY = 0
+heroShiftX = 0
+
+# --- Look ---
+logoWidth = min(70vw, 760px)
+logoBottom = 14vh
+heroFocus = 50% 40%
+dust = true
+
+# --- Music ---
+audioVolume = 0.6
+audioFadeSeconds = 6
+
+# --- Troubleshooting: set true to show red error messages on the page ---
+debug = false
