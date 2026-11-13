@@ -12,7 +12,7 @@ showTagline = true
 showLinks = false
 
 # --- Text ---
-tagline = Coming Soon
+tagline = Coming Soon 2026
 
 # --- Buttons (one per line: link = Label | URL). To hide the buttons entirely, set showLinks = false above ---
 link = Watch Trailer | https://youtube.com/
