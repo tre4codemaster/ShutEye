@@ -92,11 +92,11 @@ showTrailer = true
 showSynopsis = true
 showCast = true
 showCrew = true
-showStills = true
+showStills = false
 showNews = true
-showWatch = true
+showWatch = false
 showAwards = false
-showPress = true
+showPress = false
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
@@ -123,10 +123,15 @@ dipHold = 0.25
 # Upload the photo next to this file and put its file name here. To swap it later, upload a new
 # photo with the SAME name (or change the name). Best: 16:9 landscape, 1280 wide, under 300 KB.
 trailerThumb = fam.jpg
+# On phones the trailer becomes tall 9:16 and is cropped to fit. false = keep it wide 16:9.
+trailerPhoneCrop = true
+# Which part of the thumbnail stays in view when cropped (left% up%). 50% 50% = center. Try 30% 50% to shift left.
+trailerFocus = 50% 50%
 
 # --- TRAILER: paste a YouTube or Vimeo link (the video must allow embedding) ---
 # While this is blank, the Trailer page shows a "coming soon" placeholder player.
-# trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX
+trailer = https://vimeo.com/1046639116
+# (YouTube also works: trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX. Leave the line out or put a # in front for "Coming Soon")
 
 # --- SYNOPSIS (placeholder paragraphs and quick facts are switched off with a # until you have real text; remove the # to turn them on) ---
 # The big line at the top of the Synopsis page. Later, swap Coming Soon for your hook, e.g.:
