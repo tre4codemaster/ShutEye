@@ -27,6 +27,8 @@ heroDissolve = 7
 logoDelay = 5
 logoFade = 3.5
 contentDelay = 3
+# navDelay = seconds after the photo starts fading in that the page menu + footer appear (logo comes at heroDelay + logoDelay, so keep this smaller)
+navDelay = 3
 
 # --- Small logo above the ENTER button ---
 # gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
@@ -90,11 +92,11 @@ showTrailer = true
 showSynopsis = true
 showCast = true
 showCrew = true
-showStills = true
+showStills = false
 showNews = true
-showWatch = true
+showWatch = false
 showAwards = false
-showPress = true
+showPress = false
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
@@ -139,7 +141,15 @@ logline = Coming Soon
 # fact = Year | 2026
 # fact = Rating | NR
 
-# --- CAST: cast = Actor Name | Character | photo file (photo optional, upload it next to this file) ---
+# --- CAST PHOTOS: automatic. Upload a photo to GitHub named after the actor, lowercase with dashes:
+#     dj-qualls.jpg   erin-carere.jpg   carlo-carere.jpg   (.jpg .jpeg .png .webp all work)
+#     The page reads your GitHub file list and matches by name, so DJ Qualls.JPG, dj_qualls.png, DJ-Qualls.jpeg etc. all work too.
+#     It shows up on its own, nothing to edit here. No file = "Coming Soon" box.
+# castPhotos = false hides ALL cast photos. castFolder puts them in a GitHub folder (example: castFolder = cast)
+castPhotos = true
+# castFolder = cast
+# --- CAST: cast = Actor Name | Character | photo file (the photo is OPTIONAL, only use it for a custom file name) ---
+# Hide one actor: put a # at the start of their line.
 cast = DJ Qualls | Ash
 cast = Erin Carere | Martha Bonet
 cast = Carlo Carere | Keres
