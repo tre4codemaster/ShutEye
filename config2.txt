@@ -112,6 +112,8 @@ dustSpeed = 2.5
 # --- Music ---
 # audioLoop = false plays the ambient sound ONCE. true repeats it forever (quietly fading in over audioFadeSeconds).
 audioLoop = false
+# audioSync = true times the ambient sound to END right as the logo sound starts (so it plays right before it). false = plays immediately after ENTER.
+audioSync = true
 audioVolume = 0.8
 # Seconds to fade the sound in. 0 = starts right away at full volume.
 audioFadeSeconds = 0
