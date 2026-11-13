@@ -14,9 +14,12 @@ showLinks = false
 # --- Text ---
 tagline = Coming Soon
 
+# --- Label shown on placeholder stills, cast photos and the trailer box ---
+comingSoon = Coming Soon
+
 # --- Buttons (one per line: link = Label | URL). To hide the buttons entirely, set showLinks = false above ---
 link = Watch Trailer | https://youtube.com/
-link = Follow | https://instagram.com/
+link = Follow | https://instagram.com/shuteyethemovie
 
 # --- Timing in seconds ---
 heroDelay = 0.8
@@ -24,6 +27,27 @@ heroDissolve = 7
 logoDelay = 5
 logoFade = 3.5
 contentDelay = 3
+
+# --- Small logo above the ENTER button ---
+# gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
+gateLogo = true
+gateLogoWidth = min(46vw, 200px)
+
+# --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
+# logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
+logoSound = true
+logoSoundVolume = 1
+logoSoundDelay = 0
+# Blank = the built-in sound (a louder version of what_01.mp3). To use a file hosted here instead, upload it next to this file and remove the #:
+# logoSoundFile = what_01.mp3
+
+# --- Home photo movement ---
+# heroMotion = false: the photo stays still and just dissolves in. true = it slowly drifts/zooms while it appears.
+heroMotion = false
+
+# --- Home photo: leave "hero =" commented out to use the built-in photo. To host your own on GitHub,
+# upload hero.jpg next to this file and remove the # on the next line. ---
+# hero = hero.jpg
 
 # --- Crop / reposition the photo ---
 # heroZoom: 1 = whole photo, 1.15 = 15% closer, 1.3 = 30% closer
@@ -44,7 +68,7 @@ fogSpeed = 1
 # --- Look ---
 logoWidth = min(70vw, 760px)
 logoBottom = 14vh
-heroFocus = 50% 40%
+heroFocus = 50% 15%
 dust = true
 
 # --- Music ---
@@ -53,3 +77,153 @@ audioFadeSeconds = 6
 
 # --- Troubleshooting: set true to show red error messages on the page ---
 debug = false
+
+# =====================================================================
+# SITE PAGES
+# =====================================================================
+# HIDE A PAGE: delete its word from the pages = line below (or move it to a # comment). Add it back to show it again.
+# The menu shows the pages in the order listed. Hidden pages are not reachable from the menu or by link.
+# Menu order. Remove a word to hide that page. Options: trailer, synopsis, cast, crew, stills, news, watch, awards, press, contact
+# Hidden for now: trailer, stills, watch, press. To bring them back, use the full list:
+# pages = trailer, synopsis, cast, crew, stills, news, watch, press, contact
+pages = synopsis, cast, crew, news, contact
+
+# --- Background photo for all inner pages (blank/commented = built-in photo) ---
+# bg = my-background.jpg
+
+# --- Logo size on the other pages (1 = original, 1.3 = 30% bigger, 1.6 = 60% bigger) ---
+navLogoScale = 1.3
+
+# --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
+# vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
+vignette = 0.2
+
+# --- Dark fade at the bottom of the HOME page (hides the cut-off edge of the photo) ---
+# bottomShade: strength, 0 = none, 0.95 = nearly black at the very bottom, 1 = solid black
+# bottomShadeHeight: how far up it reaches, as % of the screen (45 = bottom 45%, 60 = taller, 30 = shorter)
+bottomShade = 0.1
+bottomShadeHeight = 45
+
+# --- Dip to black between pages (seconds) ---
+dipFade = 0.7
+dipHold = 0.25
+
+# --- TRAILER: paste a YouTube or Vimeo link (the video must allow embedding) ---
+# While this is blank, the Trailer page shows a "coming soon" placeholder player.
+# trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX
+
+# --- SYNOPSIS (placeholder paragraphs and quick facts are switched off with a # until you have real text; remove the # to turn them on) ---
+# The big line at the top of the Synopsis page. Later, swap Coming Soon for your hook, e.g.:
+# logline = You can sleep when you're dead.
+logline = Coming Soon
+# One line per paragraph. Add as many as you like.
+# synopsis = Replace this with the first paragraph of your synopsis.
+# synopsis = Replace this with the second paragraph.
+# Quick facts: fact = Label | Value
+# fact = Genre | Horror
+# fact = Runtime | 90 min
+# fact = Year | 2026
+# fact = Rating | NR
+
+# --- CAST: cast = Actor Name | Character | photo file (photo optional, upload it next to this file) ---
+cast = DJ Qualls | Ash
+cast = Erin Carere | Martha Bonet
+cast = Carlo Carere | Keres
+cast = Zac Titus | Karl Bonet
+cast = James Vallo | Radio Announcer
+cast = Susan Chambers | The Lone Shooter
+cast = Riona Lally | Bea Bonet
+cast = Macleay Bolgatz | Matt Bonet
+cast = Raiden Kam | Josh
+
+# --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
+crew = Producer | Carlo Carere
+crew = Producer | Erin Carere
+crew = Associate Producer | Jason Andrew
+crew = Associate Producer | Josh Burns
+crew = Associate Producer | Jerry L. Buxbaum
+crew = Associate Producer | Jonny Espinoza
+crew = Associate Producer | Trevor Gunter
+crew = Associate Producer | Colter Houston
+crew = Associate Producer | Hatch Houston
+crew = Associate Producer | Matt Houston
+crew = Associate Producer | Anzu Lawson
+crew = Associate Producer | Tommy Marnell
+crew = Cinematographer | Dan Ayers
+crew = Editor | Ken Blackwell
+crew = Composer | Andrea Possee
+crew = Casting Director | Dean E. Fronk
+crew = Costume Designer | Kathleen Swanson
+crew = Key Makeup Artist | Nancy Kam
+crew = Makeup Artist | Lydia Kearns
+crew = First Assistant Director | Adam Matsch
+crew = Second Assistant Director | Barrett Rezac
+crew = Second Second Assistant Director | Robert Towne
+crew = Sound Recordist | Kevin Broman
+crew = Boom Operator | Tim Defoe
+crew = Sound Designer and Foley Supervisor | Gowtham Raju K
+crew = Visual Effects Artist | Joseph Burda
+crew = Visual Effects | Mike Le Han
+crew = Stunt Coordinator | Amanda Steen
+crew = DIT | Reese Avery
+crew = Camera Operator | Dashawn Bedford
+crew = Key Grip | Michael Louis Huffstutler II
+crew = First Assistant Camera | Dexter Johnson
+crew = Score Mixer | Hilgrove Kenrick
+crew = Script Supervisor | Annie Ward
+crew = Production Assistant | Mariah Carter
+crew = Production Assistant | Owen Kircher
+crew = Production Assistant | Ashley Lupton
+crew = Production Assistant | Amaris Ad Maiora
+crew = Production Assistant | Samuel Ortega
+crew = Production Accountant | Keely Yulla Kemp
+crew = Property Master | Shane Hammond
+crew = BTS Photography and Cinematography | Colter Houston
+crew = BTS Photography and Cinematography | Hatch Houston
+crew = BTS Photography and Cinematography | Matt Houston
+crew = Special Thanks | Scott Grenke
+crew = Special Thanks | Calix Lewis Reneau
+crew = Special Thanks | Ethan Tarlow
+crew = Special Thanks | James Vallo
+
+# --- NEWS (newest first): news = Date | Headline | Text | optional link ---
+news = Nov 12, 2026 | Shuteye website launches | The official site is live. More news soon.
+
+# --- STILLS (photo gallery): still = file name | Caption ---
+# Upload your photos to the same GitHub folder as this file. To swap a placeholder,
+# upload your own photo with the SAME file name (about a minute to show), or change the name here.
+# While no "still =" line is active (no # in front), the Stills page just says Coming Soon.
+# When your photos are ready: upload them, then remove the # in front of each still line below (or add your own).
+# Click a photo to open it large. Arrows, swipe, or keyboard arrows move between photos.
+# still = still1.jpg | Placeholder still 1
+# still = still2.jpg | Placeholder still 2
+# still = still3.jpg | Placeholder still 3
+# still = still4.jpg | Placeholder still 4
+# still = still5.jpg | Placeholder still 5
+# still = still6.jpg | Placeholder still 6
+
+# --- WATCH: screenings and streaming (page shows "announced soon" while these are empty) ---
+# screening = Date | Event | Location | optional ticket link
+# screening = Mar 14, 2027 | World Premiere | Your Festival, City | https://tickets.example.com
+# stream = Watch on Vimeo | https://vimeo.com/
+# stream = Watch on Amazon | https://amazon.com/
+
+# --- AWARDS (add the word "awards" to pages = above to show this page) ---
+# award = Official Selection | Festival Name | 2027
+# quote = A terrifying debut. | Publication Name
+
+# --- PRESS KIT downloads: download = Label | file name in this folder, or a full https:// link ---
+# download = Poster (high-res) | poster.jpg
+# download = Press kit (PDF) | presskit.pdf
+# download = Trailer file | https://vimeo.com/
+
+# --- CONTACT ---
+contactText = For press, festivals and distribution, get in touch.
+email = erincarere@gmail.com
+social = Instagram | https://instagram.com/shuteyethemovie
+social = Facebook | https://www.facebook.com/ShutEyeMovie/
+# Mailing list signup page (Mailchimp, Substack, etc.): signup = Label | link
+# signup = Join the mailing list | https://example.com/signup
+
+# --- Footer line shown at the bottom of each page ---
+copyright = © 2026 Shuteye. All rights reserved.
