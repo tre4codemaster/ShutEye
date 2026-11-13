@@ -31,8 +31,15 @@ contentDelay = 3
 # heroShiftX: negative moves it left, positive moves it right
 # Tip: shifting needs some zoom (at least 1.1) or a black edge will show.
 heroZoom = 1
-heroShiftY = -224
+heroShiftY = 0
 heroShiftX = 0
+
+# --- Fog (slow, subtle drifting mist) ---
+# fogOpacity: 0.2 = barely there, 0.35 = subtle, 0.6 = thick
+# fogSpeed: 1 = very slow, 2 = twice as fast, 0.5 = half as fast
+fog = false
+fogOpacity = 0.35
+fogSpeed = 1
 
 # --- Look ---
 logoWidth = min(70vw, 760px)
