@@ -101,8 +101,8 @@ vignette = 0.2
 # --- Dark fade at the bottom of the HOME page (hides the cut-off edge of the photo) ---
 # bottomShade: strength, 0 = none, 0.95 = nearly black at the very bottom, 1 = solid black
 # bottomShadeHeight: how far up it reaches, as % of the screen (45 = bottom 45%, 60 = taller, 30 = shorter)
-bottomShade = 0.1
-bottomShadeHeight = 45
+bottomShade = 1
+bottomShadeHeight = 14
 
 # --- Dip to black between pages (seconds) ---
 dipFade = 0.7
