@@ -91,7 +91,7 @@ fogSpeed = 1
 # Logo size. It is also automatically kept small enough to sit in the LOWER HALF of the browser window, below the people's faces.
 # logoWidth = width on desktop/tablet. logoWidthPhone = width on phones. logoMaxHeight = tallest the logo may ever be.
 # logoBottom = how far up from the bottom edge the logo block sits (keep it clear of the footer text).
-logoWidth = min(36vw, 440px)
+logoWidth = min(36vw, 540px)
 logoWidthPhone = min(64vw, 280px)
 logoMaxHeight = 190px
 logoBottom = 9vh
