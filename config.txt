@@ -31,7 +31,7 @@ contentDelay = 3
 # heroShiftX: negative moves it left, positive moves it right
 # Tip: shifting needs some zoom (at least 1.1) or a black edge will show.
 heroZoom = 1
-heroShiftY = -12
+heroShiftY = -24
 heroShiftX = 0
 
 # --- Look ---
