@@ -167,7 +167,7 @@ heroLargeFrom = 0
 # bigScreenMax = the most it will ever grow (1 = never grow, 1.5 = up to 50% bigger).
 bigScreen = true
 bigScreenFrom = 2560
-bigScreenMax = 1.5
+bigScreenMax = 2.5
 
 # --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
 # vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
