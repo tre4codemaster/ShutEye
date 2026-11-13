@@ -51,14 +51,14 @@ not_in_service = NUMBER NOT IN SERVICE
 [trailer]
 # Paste a YouTube or Vimeo link after the = sign.
 # Leave it empty and the phone shows "coming soon".
-link =
+link = https://www.youtube.com/shorts/Xe5n1Qoyv_Q
 
 
 [photos]
 # A file name from your images folder, OR a full image link
 # (a Google Drive share link, Dropbox, GitHub or any website).
 # Add 6 =, 7 = ... for more photos. Empty slots show a numbered frame.
-1 = photo1.jpg
+1 = shut.png
 2 = photo2.jpg
 3 = photo3.jpg
 4 = photo4.jpg
