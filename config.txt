@@ -35,6 +35,22 @@ contentDelay = 3
 navDelay = 3
 
 # --- Small logo above the ENTER button ---
+# --- PHONE OPENING: the opening screen is the satellite phone getting an emergency call. Tap/click it to "answer" and start. ---
+# phoneGate = false goes back to the plain logo + ENTER button.
+phoneGate = false
+# Words on the phone screen:
+phoneAlert = EMERGENCY
+phoneSub = INCOMING CALL
+# Small labels on the phone's two screen buttons (leave phoneRight blank for none):
+phoneLeft = Answer
+# phoneRight = Ignore
+# Line under the phone:
+phoneHint = Tap to answer
+# phoneShake = false stops the phone buzzing
+phoneShake = true
+# Swap the phone picture: upload a transparent PNG to GitHub and put its name here (the screen area must stay in the same spot):
+# phoneImage = phone.png
+
 # gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
 gateLogo = true
 gateLogoWidth = min(46vw, 200px)
@@ -90,13 +106,14 @@ debug = false
 # =====================================================================
 # SHOW OR HIDE EACH PAGE: true = it is in the menu, false = hidden.
 # Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
-# The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
+# The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, Martha's Phone, News, Watch, Awards, Press, Contact.
 # =====================================================================
 showTrailer = false
 showSynopsis = true
 showCast = true
 showCrew = true
 showStills = false
+showPhone = true
 showNews = true
 showWatch = false
 showAwards = false
@@ -218,6 +235,46 @@ crew = Special Thanks | Scott Grenke
 crew = Special Thanks | Calix Lewis Reneau
 crew = Special Thanks | Ethan Tarlow
 crew = Special Thanks | James Vallo
+
+# --- MARTHA'S PHONE page (page name in the menu: phoneTitle). Set showPhone = true / false up in the page switches. ---
+# When someone opens the page the phone flashes EMERGENCY and waits. They press the green call button (or tap the screen) to ANSWER:
+# the flashing stops and the audio message plays. The red hang-up button ends the message early. When it finishes (or is hung up)
+# the phone shows its menu (Messages, Texts).
+# phoneAudio = the audio file you upload to GitHub next to this file (mp3 is best). Leave blank = no audio, it just flashes for phoneFlashSeconds
+# (81 = the length of emergency_01.mp3 in seconds; also used as the backup if the audio file cannot load).
+phoneAudio = emergency_01.mp3
+phoneTitle = Martha's Phone
+# Line under the phone while it is flashing:
+phonePageHint = Press the green button to answer
+phoneFlashSeconds = 81
+
+# MESSAGES (voicemail):  voicemail = From | Time | What it says      (newest first, one line each)
+# PLACEHOLDER messages: replace with your own.
+voicemail = Unknown | 11:42 PM | Martha, if you get this, don't go back to the trailhead. Stay where you are. Please. // They can hear the radio.
+voicemail = Karl | 9:15 PM | Hey it's me. Bea says the signal's been dropping again. Call me when you're out of the trees.
+voicemail = Ranger Station | 6:02 PM | This is an automated notice. The north road is closed until further notice.
+
+# TEXTS:  sms = Thread | From | Time | Message      (From = Martha makes it a message SHE sent, shown on the right)
+# PLACEHOLDER texts: replace with your own. Lines with the same Thread name are grouped into one conversation, in order.
+sms = Karl | Karl | 8:41 PM | You still coming up tonight?
+sms = Karl | Martha | 8:44 PM | Leaving now. Be there by ten.
+sms = Karl | Karl | 8:45 PM | Don't take the shortcut.
+sms = Bea | Bea | 7:10 PM | Do you hear that? Like someone humming
+sms = Bea | Martha | 7:12 PM | It's the wind, Bea. Go to sleep.
+sms = Bea | Bea | 7:13 PM | It's not the wind
+
+# EASTER EGGS:  egg = code | Hidden message
+# code = a number to dial on the keypad (type it, then press the green call key), OR tap a part of the phone:
+#   signal  satellite  battery  led  speaker      (tap the signal bars, the satellite icon, the battery, the blinking light, the earpiece)
+# PLACEHOLDER eggs: replace with your own.
+egg = 911 | No service. Nobody can hear you out here.
+egg = 1111 | You are not the first to call this number.
+egg = 0000 | Hello, Martha.
+egg = satellite | 0 satellites in range. One is watching anyway.
+egg = signal | Signal: none. But something is still transmitting.
+egg = battery | Battery: 97%. It has been 97% since you got here.
+egg = led | It blinks in time with something breathing.
+egg = speaker | ...stay on the line.
 
 # --- NEWS (newest first): news = Date | Headline | Text | optional link ---
 news = Nov 12, 2026 | Shuteye website launches | The official site is live. More news soon.
