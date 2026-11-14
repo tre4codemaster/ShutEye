@@ -109,12 +109,12 @@ debug = false
 # The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, Martha's Phone, News, Watch, Awards, Press, Contact.
 # =====================================================================
 showTrailer = false
-showSynopsis = true
-showCast = true
-showCrew = true
+showSynopsis = false
+showCast = false
+showCrew = false
 showStills = false
 showPhone = false
-showNews = true
+showNews = false
 showWatch = false
 showAwards = false
 showPress = false
