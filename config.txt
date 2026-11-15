@@ -28,34 +28,16 @@ link = Follow | https://instagram.com/shuteyethemovie
 
 # --- Timing in seconds ---
 heroDelay = 0.8
-heroDissolve = 7
-logoDelay = 5
-logoFade = 3.5
-contentDelay = 3
+heroDissolve = 2
+logoDelay = 2
+logoFade = 2
+contentDelay = 1.3
 # navDelay = seconds after the photo starts fading in that the page menu + footer appear (logo comes at heroDelay + logoDelay, so keep this smaller)
-navDelay = 3
+navDelay = 0
 
 # --- Small logo above the ENTER button ---
-# --- PHONE OPENING: the opening screen is the satellite phone getting an emergency call. Tap/click it to "answer" and start. ---
-# phoneGate = false goes back to the plain logo + ENTER button.
-phoneGate = false
-# Words on the phone screen:
-phoneAlert = Emergency|Alert
-phoneSub =
-# Small labels on the phone's two screen buttons (leave phoneRight blank for none):
-phoneLeft = Answer
-# phoneRight = Ignore
-# Line under the phone:
-phoneHint = Tap to answer
-# phoneShake = false stops the phone buzzing
-phoneShake = true
-# Swap the phone picture: upload a transparent PNG to GitHub and put its name here (the screen area must stay in the same spot):
-# phoneImage = phone.png
-
-# gateLogo: true/false. gateLogoWidth: size, e.g. 150px smaller, 260px bigger.
 gateLogo = true
 gateLogoWidth = min(46vw, 200px)
-
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
 logoSound = true
@@ -128,7 +110,7 @@ debug = false
 # --- MENU GROUPS (nested menu): navgroup = Menu Name | page, page, page ---
 # Those pages move into a dropdown under that name. Pages not listed stay as normal menu items.
 # The group sits where its first page would be. Hidden pages (show... = false) are left out; a group with one page left is shown as a plain link.
-# Page names: trailer synopsis cast crew stills phone news watch awards press contact
+# Page names: trailer synopsis cast crew stills news watch awards press contact
 # navGroups = false turns ALL grouping off (flat menu, like before).
 navGroups = true
 navgroup = Film | trailer, synopsis, cast, crew, stills
@@ -136,18 +118,17 @@ navgroup = Updates | news, awards, press
 
 # SHOW OR HIDE EACH PAGE: true = it is in the menu, false = hidden.
 # Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
-# The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, Martha's Phone, News, Watch, Awards, Press, Contact.
+# The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
 # =====================================================================
-showTrailer = false
-showSynopsis = false
+showTrailer = true
+showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
-showPhone = false
+showStills = true
 showNews = true
-showWatch = false
+showWatch = true
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
@@ -162,7 +143,7 @@ navLogoScale = 1.3
 # Put 2600 here to use it only on 2K/4K screens (phones and laptops then get the smaller built-in photo and load faster).
 heroLarge = hero_4k.jpg
 heroLargeFrom = 0
-# bigScreen = true grows the menu, buttons, text, logo and phone on wide screens so a 4K monitor looks like a normal-sized site (just sharper).
+# bigScreen = true grows the menu, buttons, text, logo on wide screens so a 4K monitor looks like a normal-sized site (just sharper).
 # It starts at bigScreenFrom (2560 = a 2K screen, no change there) and grows smoothly until bigScreenAt (3840 = a 4K screen), where it reaches bigScreenMax.
 # bigScreenMax = how big it gets at the top: 1 = never grow, 1.5 = 50% bigger, 2 = double, 2.5 = even bigger. If 4K still looks small, raise this.
 # NOTE: "width" here is the browser window width in CSS pixels. If your 4K monitor uses Windows/Mac display scaling (125%, 150%...), the window is narrower than 3840, so it grows a bit less.
@@ -235,53 +216,22 @@ cast = James Vallo | Radio Announcer | | voice
 cast = Anzu Lawson | Dr. Michelle Fowler | | voice
 cast = Ken Blackwell | Dr. Daniel Jones | | voice
 
-# --- CHARACTER PAGES: click a cast member to open a deeper look at their character. ---
-# character = Character | hero image file | Tagline | Bio | side | face
+# --- CAST PHOTOS: character = Character | photo file | face ---
 #   - Character must match the character name on the cast line above (example: Martha Bonet).
-#   - hero image file = a tall portrait of the character, uploaded to GitHub next to this file (png, jpg or webp).
-#     A plain backdrop is fine: the edges fade into the page by themselves. A cut-out with a transparent background works too.
-#     No file yet = a dark silhouette placeholder shows.
-#   - The SAME photo makes the cast thumbnail, zoomed in on the face.
-#   - side = not used any more. The character is always on the left and the bio on the right. Leave it as "left".
-#   - face = where the EYES really are in the photo:  across  down  eyeGap   (eyeGap = distance between the two eyes, as a percent of the photo width).  Optional 4th and 5th numbers affect ONLY the cast thumbnail: 4th = extra zoom (1.15 = 15 percent bigger), 5th = nudge sideways (positive = right, negative = left), 6th = nudge up/down in pixels (negative = up, positive = down).  7th (bio page only) = move the big photo up/down in pixels so the top of the head bleeds the same amount over the box.  8th (bio page only) = move the big photo sideways in pixels (positive = right).  9th (phones only) = where the middle of the BODY is, as a percent of the photo width (50 = dead center); phones center the body, not the eyes.  10th (phones only) = photo size multiplier (1.15 = 15 percent bigger).  11th (phones only) = move the photo sideways in pixels (positive = right)
+#   - photo file = the portrait, uploaded to GitHub next to this file (png, jpg or webp). It becomes the cast thumbnail, zoomed in on the face.
+#   - face = where the EYES really are in the photo:  across  down  eyeGap  zoom  sideways  upDown
 #     across and down are percentages of the photo (50 22 = middle, 22 percent of the way down). Measure the eyes, not the face.
-#     The page then moves every photo so the eyes land on thumbEyeline (cast page) and bioEyeline (open character page), set further down.
-#     zoom (thumbnail only) 1 = whole width, 2 = twice as close. Leave it off for 50 22 1.9.
-#   - // in the Bio = new paragraph.
-# charfact = Character | Label | Value      (the small fact rows under the bio, as many as you like)
-# PLACEHOLDER text below: replace with your own. Cast members with no character line still open, with a short default page.
-character = Martha Bonet | 01_martha.png | She hasn't slept in four days. She won't start now. | Martha came up the mountain to bring her family home. Then the radio started humming. // The roads are closed and the phones are dying. Her one rule is simple: stay awake. | left | 55.6 22.7 15.6 0.90 5 -10 -12 110 48.5 1 0 -20
-charfact = Martha Bonet | Age | 41
-charfact = Martha Bonet | Status | Missing
-charfact = Martha Bonet | Last seen | Trailhead 9, north road
-character = Karl Bonet | 04_karl.png | He told her not to take the shortcut tonight. | Karl knows these woods better than anyone, which is exactly why he's afraid of them. // He keeps a date written on his arm and won't tell anyone what it means or why. | left | 51.6 22.2 13.2 0.9 0 0 8 50 48.7
-charfact = Karl Bonet | Age | 44
-charfact = Karl Bonet | Status | Unaccounted for
-charfact = Karl Bonet | Last message | Don't take the shortcut.
-character = Bea Bonet | 03_bea.png | It's not the wind. Bea heard it before anyone. | Bea heard it first. A hum in the trees, like someone singing with their mouth closed. // Nobody believed her until they heard it too. By then it was already too late. | left | 35.5 22.5 15 1.0 -10 0 -12 0 51.4 1 0 -20
-charfact = Bea Bonet | Age | 16
-charfact = Bea Bonet | Status | Awake
-charfact = Bea Bonet | Hears | Everything
-character = Ash | 02_ash.png | Some people watch the woods. He stopped watching. | Ash has patrolled these trails longer than he cares to count. He knows every sound here. // He won't say what he saw at Trailhead 9. He just keeps one hand on his radio at all times. | left | 36.7 26.7 14 0.9 0 0 28 0 52.8 1 50
-charfact = Ash | Occupation | Park ranger
-charfact = Ash | Status | On patrol
-charfact = Ash | Radio | Silent since dusk
-character = Matt Bonet | 06_matt.png | He just wanted one quiet weekend in the woods. | Matt is the youngest of the Bonets and the last of them to believe any of it. // He keeps his cap low, his headphones on, and his eyes on the ground. It's not working. | left | 66.3 21.8 15.1 1 0 0 -18 120 49.6 1.15 -50
-charfact = Matt Bonet | Age | 17
-charfact = Matt Bonet | Status | Missing
-charfact = Matt Bonet | Last seen | Following the humming
-character = Keres | 07_keres.png | Something got into him out there, long ago. | Nobody knows where Keres came from, or how long he has been out in the trees. // He doesn't blink. He doesn't talk. He just moves toward whoever is still awake. | left | 46.5 26 15 1 0 0 8 0 51.6
-charfact = Keres | Status | Unknown
-charfact = Keres | Threat | Extreme
-charfact = Keres | Last seen | Everywhere
-character = Josh | josh.png | He said he'd be right back. That was hours ago. | Josh is Matt's closest friend and the first to notice the humming had a pattern. // He keeps a notebook of every sound he hears, and nobody has found the last page. | left | 56.6 37.8 17 1.1
-charfact = Josh | Age | 17
-charfact = Josh | Status | Unknown
-charfact = Josh | Last seen | Near the old ranger station
-character = Tilly | lilly.png | No one knows why she keeps firing at the trees. | She appears at dusk on the ridge road, rifle raised, aimed at the same dark line of pines. // She has never answered a single question and has never once missed a shot. | left | 50.2 20.4 14.2 0.9
-charfact = Tilly | Age | Unknown
-charfact = Tilly | Status | Armed
-charfact = Tilly | Last seen | Ridge road, after dusk
+#     eyeGap = distance between the two eyes as a percent of the photo width.
+#     zoom 1 = normal, bigger = closer.  sideways = nudge left/right (percent of thumbnail width).  upDown = nudge up/down in pixels.
+#     The page moves every photo so the eyes land on thumbEyeline, set further down.
+character = Martha Bonet | 01_martha.png | 55.6 22.7 15.6 0.90 5 -10
+character = Karl Bonet | 04_karl.png | 51.6 22.2 13.2 0.9 0 0
+character = Bea Bonet | 03_bea.png | 35.5 22.5 15 1.0 -10 0
+character = Ash | 02_ash.png | 36.7 26.7 14 0.9 0 0
+character = Matt Bonet | 06_matt.png | 66.3 21.8 15.1 1 0 0
+character = Keres | 07_keres.png | 46.5 26 15 1 0 0
+character = Josh | josh.png | 56.6 37.8 17 1.1
+character = Tilly | lilly.png | 50.2 20.4 14.2 0.9
 
 # --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
 crew = Producer | Carlo Carere
@@ -333,130 +283,13 @@ crew = Special Thanks | Calix Lewis Reneau
 crew = Special Thanks | Ethan Tarlow
 crew = Special Thanks | James Vallo
 
-# --- MARTHA'S PHONE page (page name in the menu: phoneTitle). Set showPhone = true / false up in the page switches. ---
-# When someone opens the page the phone flashes EMERGENCY and waits. They press the green call button (or tap the screen) to ANSWER:
-# the flashing stops and the audio message plays. The red hang-up button ends the message early. When it finishes (or is hung up)
-# the phone shows its menu (Messages, Texts).
-# phoneAudio = the audio file you upload to GitHub next to this file (mp3 is best). Leave blank = no audio, it just flashes for phoneFlashSeconds
-# (81 = the length of emergency_01.mp3 in seconds; also used as the backup if the audio file cannot load).
-phoneAudio = emergency_01.mp3
-phoneTitle = Martha's Phone
-# Screen after the call is answered (steady, no flashing):
-phoneAnswerTitle = Emergency Alert
-phoneAnswerSub = ShutEye Response Team
-# Line under the phone while it is flashing:
-phonePageHint = Press the green button to answer
-phoneFlashSeconds = 81
-# phoneScale = size of the phone on the Martha's Phone page (1 = old size, 1.25 = 25% bigger, 1.5 = 50% bigger)
-phoneScale = 1.25
-# phoneZoom = true: on smartphones, answering zooms the phone in so the screen is big (everything below the End button is hidden).
-# A "Dial number" tab on the side zooms back out to the keypad. Texts and hidden messages show in a box ABOVE the phone. false = off.
-phoneZoom = true
-phoneDialLabel = Dial number
-phoneZoomLabel = Zoom in
-
-# --- CHARACTER PAGES: where the eyes sit (percent of the height, measured from the top) ---
-# thumbEyeDist / bioEyeDist / bioEyeDistMobile = how big every face is (eye gap as % of thumbnail width / photo area width). Same number = same size for everyone. Bigger = closer.
-# thumbEyeline = eye height on the little cast thumbnails.   bioEyeline = eye height on the big photo when a character page is open.
-# Every character uses the same two numbers, so all the eyes line up. 33 = rule of thirds. Bigger number = eyes lower down.
+# --- CAST THUMBNAILS: where the eyes sit (percent of the height, measured from the top) ---
+# thumbEyeDist = how big every face is on the cast thumbnails (eye gap as % of thumbnail width). Same number = same size for everyone. Bigger = closer.
+# thumbEyeline = eye height on the little cast thumbnails. Every character uses the same number, so all the eyes line up. 33 = rule of thirds. Bigger number = eyes lower down.
 thumbEyeline = 34
-bioEyeline = 30
-bioEyelineMobile = 44
 thumbEyeDist = 28
 # castRows = how many cast cards on each line of the Cast page, top to bottom. 4, 4, 3 = four on line 1, four on line 2, three on line 3 (all centered).
 castRows = 4, 4, 3
-# castPopup = true opens the character page when a cast photo is clicked.  false = nothing is clickable (popups turned off for now).
-castPopup = false
-bioEyeDist = 13
-bioEyeDistMobile = 14
-
-# ---------------------------------------------------------------------------------------------
-# PHONE: HOW IT WORKS (for you)
-#   Main Menu = Messages, Voicemail, Contacts, More.   More = Data, Games, Replay alert, Secrets.
-#   Everything below is PLACEHOLDER. Replace the text, numbers and audio file names with your own.
-# ---------------------------------------------------------------------------------------------
-
-# CONTACTS (and their voicemail):  contact = Name | Phone number | Voicemail audio file | Seconds | What the voicemail says
-#   - Add as many as you like, one per line. The audio file goes in your GitHub repo next to this file (mp3).
-#   - If the audio file is not there yet, the phone still "plays" the voicemail for the number of Seconds
-#     and shows the words above the phone. So these work as placeholders until you record the real ones.
-#   - // in the words = new line.   Someone can also type a contact's number on the keypad to hear their voicemail.
-contact = Bea | 555-010-0142 | vm_bea.mp3 | 12 | Martha, it's Bea. I'm in the car. I can still hear it humming, even with the windows up. Call me back. Please. Before dark.
-contact = Karl | 555-010-0187 | vm_karl.mp3 | 10 | Hey, it's Karl. Bea says you don't close them anymore. If you're reading this, spell the thing you can't close, on the keypad. Four letters. Then get out of the trees.
-contact = CDC | 555-010-0100 | vm_cdc.mp3 | 15 | This is an automated message from the Centers for Disease Control. The ShutEye neurotoxin outbreak is now a level four emergency. Do not attempt to sleep. Stay in a lit room. Stay calm. Stay awake. Press nothing. Stay on the line.
-contact = Dr. Jones | 555-010-0147 | vm_jones.mp3 | 10 | Martha, Dr. Jones. Your bed is ready. Room forty-seven. That is four, seven. Pad it with zeros if you must. Please do not try to sleep elsewhere.
-
-# MESSAGES (texts):  sms = Conversation name | Who said it | Time | Message
-#   - Lines with the same Conversation name are one conversation, in order. Each conversation is one row in Messages.
-#   - Who said it = Martha makes it a message SHE sent (shown on the right).
-#   - Add more conversations any time: just use a new Conversation name. The list scrolls.
-sms = Bea | Bea | 7:10 PM | Do you hear that? Like someone humming
-sms = Bea | Martha | 7:12 PM | It's the wind, Bea. Go to sleep.
-sms = Bea | Bea | 7:13 PM | It's not the wind. Karl says the lock code is a straight line down the middle of the keypad. Weird, right?
-sms = Bea | Martha | 7:14 PM | Bea, don't go to sleep.
-sms = Bea & Karl | Bea | 9:02 PM | Karl, tell me you remember the Miller place.
-sms = Bea & Karl | Karl | 9:03 PM | Same as always. Halloween. I still have the date written on my arm.
-sms = Bea & Karl | Bea | 9:04 PM | Month, then day. I wish I didn't remember it.
-sms = Bea & Karl | Karl | 9:05 PM | Don't say it out loud. Not out here.
-sms = CDC Guidelines | CDC | 6:00 PM | CDC HEALTH ADVISORY: Stay indoors. Keep lights on at all times. Avoid wooded areas. Do not hum along with any sound you cannot identify.
-sms = CDC Guidelines | CDC | 6:01 PM | If you must rest, rest with your eyes open. Our hotline spells the protocol on your keypad: S-H-U-T. Type the letters, not the numbers.
-sms = CDC Guidelines | CDC | 6:02 PM | Do not travel in pairs, groups or alone. Please stand still.
-sms = CDC Symptoms | CDC | 6:30 PM | ShutEye symptoms, stage 1: drowsiness, humming in the ears, vivid dreams of a long hallway.
-sms = CDC Symptoms | CDC | 6:31 PM | Stage 2: you stop blinking. Stage 3: you stop wanting to. Stage 4: you are no longer the one deciding.
-sms = CDC Symptoms | CDC | 6:32 PM | If you are experiencing stage 4, please disregard stages 1 through 3. Thank you for your cooperation.
-sms = Dr. Jones | Dr. Jones | 8:15 PM | Martha, your results are back. Please come in. Your room is waiting.
-sms = Dr. Jones | Martha | 8:17 PM | Which room?
-sms = Dr. Jones | Dr. Jones | 8:17 PM | The one you have always had. Forty-seven. Don't forget the number.
-sms = Unknown | Unknown | 3:33 AM | CONGRATULATIONS! You've been selected for a FREE vacation! Resort of your dreams! Only one catch: you can never leave. Reply YES.
-sms = Unknown | Unknown | 3:34 AM | Forgot your PIN? 99 percent of people use one-two-three-four. Are you the 1 percent? You are not.
-sms = Unknown | Unknown | 3:35 AM | Hot singles in your area! Area: the woods behind you. Do not turn around.
-
-# MORE > DATA:  data = Label | Value    (facts about Martha. Tap a row to read the whole line above the phone.)
-data = Owner | Martha
-data = Number | 555-010-0123
-data = Birthday | June 13th
-data = Blood type | O negative
-data = Last location | ERROR 404
-data = Last check-in | 3 days ago
-data = Sleep, last 4 days | 1 hr, 1 hr, 1 hr, 1 hr
-data = Heart rate | 112 bpm and rising
-data = Exposure | Level 4: HIGH
-data = Snake best | Martha 42, Karl 24. Winner first.
-data = Blinks today | 0
-
-# EASTER EGGS:  egg = code | Hidden message
-# code = a 4-digit number to dial on the keypad (go to the dial screen with the End key, type it, then it dials by itself or press the green call key),
-#        OR tap a part of the phone:
-#   signal  satellite  battery  led  speaker      (tap the signal bars, the satellite icon, the battery, the blinking light, the earpiece)
-# THE 10 CODES AND WHERE THEIR HINTS ARE (delete this note if you like):
-#   0613 Birthday ............ hint in More > Data (Birthday)
-#   1031 Halloween ........... hint in the Bea & Karl text conversation
-#   3937 E-Y-E-S on the keys . hint in Karl's voicemail
-#   7488 S-H-U-T on the keys . hint in CDC Guidelines text
-#   0404 Not found ........... hint in More > Data (Last location)
-#   1111 Four hours asleep ... hint in More > Data (Sleep)
-#   1234 Spam message PIN .... hint in the Unknown texts
-#   0047 Room forty-seven .... hint in Dr. Jones' voicemail and texts
-#   2580 Straight down the middle . hint in the Bea texts
-#   4224 Snake scores ........ hint in More > Data (Snake best)
-egg = 0613 | Happy birthday, Martha. Bea left a candle in your tent. It was lit when she checked. Nobody else has been in the tent.
-egg = 1031 | The Miller place. Karl swears there were four of you inside that night. There were five.
-egg = 3937 | E-Y-E-S. You typed it. It noticed.
-egg = 7488 | S-H-U-T. Good advice. A little late.
-egg = 0404 | Location not found. Martha not found. Please try again later.
-egg = 1111 | Four hours of sleep in four days. Nobody here is sleeping. Nobody here can.
-egg = 1234 | UNKNOWN: LOL you actually typed that. Congratulations! You've won 10 percent off your next nightmare. Offer expires when you do.
-egg = 0047 | Room 47 is still occupied. Dr. Jones says you've been checked in since Tuesday.
-egg = 2580 | Straight down the middle, like the hallway. Don't look at the end of it.
-egg = 4224 | Snake high scores: Martha 42, Karl 24. Karl has never played Snake. Someone is playing as Karl.
-egg = satellite | 0 satellites in range. One is watching anyway.
-egg = signal | Signal: none. But something is still transmitting.
-egg = battery | Battery: {battery}%. It keeps dropping, and nobody is using it.
-egg = led | It blinks in time with something breathing.
-egg = speaker | ...stay on the line.
-# Optional: the LAST egg (code = final). It shows by itself once someone has found all the others.
-egg = final | You found them all. Now go back to the trailhead.
-# {battery} in an egg message shows the phone's battery level.
 
 # --- NEWS (newest first): news = Date | Headline | Text | optional link ---
 news = Nov 12, 2026 | Shuteye website launches | The official site is live. More news soon.
