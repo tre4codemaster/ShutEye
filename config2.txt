@@ -222,15 +222,18 @@ castPhotos = true
 # castFolder = cast
 # --- CAST: cast = Actor Name | Character | photo file (the photo is OPTIONAL, only use it for a custom file name) ---
 # Hide one actor: put a # at the start of their line.
-cast = DJ Qualls | Ash
+# Voice talent: add  |  |  voice  at the end of the line (no photo box, just a name card). Example: cast = Actor Name | Character | | voice
 cast = Erin Carere | Martha Bonet
 cast = Riona Lally | Bea Bonet
 cast = Zac Titus | Karl Bonet
 cast = Macleay Bolgatz | Matt Bonet
+cast = DJ Qualls | Ash
 cast = Carlo Carere | Keres
 cast = Raiden Kam | Josh
-cast = Susan Chambers | The Lone Shooter
-cast = James Vallo | Radio Announcer
+cast = Susan Chambers | Tilly
+cast = James Vallo | Radio Announcer | | voice
+cast = Anzu Lawson | Dr. Michelle Fowler | | voice
+cast = Ken Blackwell | Dr. Daniel Jones | | voice
 
 # --- CHARACTER PAGES: click a cast member to open a deeper look at their character. ---
 # character = Character | hero image file | Tagline | Bio | side | face
@@ -271,18 +274,14 @@ character = Keres | 07_keres.png | Something got into him out there, long ago. |
 charfact = Keres | Status | Unknown
 charfact = Keres | Threat | Extreme
 charfact = Keres | Last seen | Everywhere
-character = Josh |  | He said he'd be right back. That was hours ago. | Josh is Matt's closest friend and the first to notice the humming had a pattern. // He keeps a notebook of every sound he hears, and nobody has found the last page. | left | 50 22 15
+character = Josh | josh.png | He said he'd be right back. That was hours ago. | Josh is Matt's closest friend and the first to notice the humming had a pattern. // He keeps a notebook of every sound he hears, and nobody has found the last page. | left | 56.6 37.8 17 1.1
 charfact = Josh | Age | 17
 charfact = Josh | Status | Unknown
 charfact = Josh | Last seen | Near the old ranger station
-character = The Lone Shooter |  | No one knows why she keeps firing at the trees. | She appears at dusk on the ridge road, rifle raised, aimed at the same dark line of pines. // She has never answered a single question and has never once missed a shot. | left | 50 22 15
-charfact = The Lone Shooter | Age | Unknown
-charfact = The Lone Shooter | Status | Armed
-charfact = The Lone Shooter | Last seen | Ridge road, after dusk
-character = Radio Announcer |  | The voice on the radio never says goodnight. | He reads the weather every hour on the hour, long after the station lost power. // Listeners swear the forecast gets a little closer to home with every broadcast. | left | 50 22 15
-charfact = Radio Announcer | Station | KSHT 91.3
-charfact = Radio Announcer | Status | On air
-charfact = Radio Announcer | Last heard | Every hour, on the hour
+character = Tilly | lilly.png | No one knows why she keeps firing at the trees. | She appears at dusk on the ridge road, rifle raised, aimed at the same dark line of pines. // She has never answered a single question and has never once missed a shot. | left | 50.2 20.4 14.2 0.9
+charfact = Tilly | Age | Unknown
+charfact = Tilly | Status | Armed
+charfact = Tilly | Last seen | Ridge road, after dusk
 
 # --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
 crew = Producer | Carlo Carere
@@ -364,6 +363,10 @@ thumbEyeline = 34
 bioEyeline = 30
 bioEyelineMobile = 44
 thumbEyeDist = 28
+# castRows = how many cast cards on each line of the Cast page, top to bottom. 4, 4, 3 = four on line 1, four on line 2, three on line 3 (all centered).
+castRows = 4, 4, 3
+# castPopup = true opens the character page when a cast photo is clicked.  false = nothing is clickable (popups turned off for now).
+castPopup = false
 bioEyeDist = 13
 bioEyeDistMobile = 14
 
