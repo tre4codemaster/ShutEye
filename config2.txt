@@ -240,37 +240,34 @@ cast = James Vallo | Radio Announcer
 #     No file yet = a dark silhouette placeholder shows.
 #   - The SAME photo makes the cast thumbnail, zoomed in on the face.
 #   - side = not used any more. The character is always on the left and the bio on the right. Leave it as "left".
-#   - face = where the EYES really are in the photo:  across  down  eyeGap   (eyeGap = distance between the two eyes, as a percent of the photo width)
+#   - face = where the EYES really are in the photo:  across  down  eyeGap   (eyeGap = distance between the two eyes, as a percent of the photo width).  Optional 4th and 5th numbers affect ONLY the cast thumbnail: 4th = extra zoom (1.15 = 15 percent bigger), 5th = nudge sideways (positive = right, negative = left), 6th = nudge up/down in pixels (negative = up, positive = down).  7th (bio page only) = move the big photo up/down in pixels so the top of the head bleeds the same amount over the box.  8th (bio page only) = move the big photo sideways in pixels (positive = right).  9th (phones only) = where the middle of the BODY is, as a percent of the photo width (50 = dead center); phones center the body, not the eyes.  10th (phones only) = photo size multiplier (1.15 = 15 percent bigger).  11th (phones only) = move the photo sideways in pixels (positive = right)
 #     across and down are percentages of the photo (50 22 = middle, 22 percent of the way down). Measure the eyes, not the face.
 #     The page then moves every photo so the eyes land on thumbEyeline (cast page) and bioEyeline (open character page), set further down.
 #     zoom (thumbnail only) 1 = whole width, 2 = twice as close. Leave it off for 50 22 1.9.
 #   - // in the Bio = new paragraph.
 # charfact = Character | Label | Value      (the small fact rows under the bio, as many as you like)
 # PLACEHOLDER text below: replace with your own. Cast members with no character line still open, with a short default page.
-character = Martha Bonet | 01_martha.png | She hasn't slept in four days. She isn't going to start now. | Martha Bonet came up the mountain to bring her family home. Then the radio started humming. // Now the roads are closed, the phones are dying, and anyone who closes their eyes doesn't wake up the same. Martha has one rule left: stay awake. | left | 55.6 22.7 15.6
+character = Martha Bonet | 01_martha.png | She hasn't slept in four days. She won't start now. | Martha came up the mountain to bring her family home. Then the radio started humming. // The roads are closed and the phones are dying. Her one rule is simple: stay awake. | left | 55.6 22.7 15.6 0.90 5 -10 -12 110 48.5
 charfact = Martha Bonet | Age | 41
-charfact = Martha Bonet | Occupation | ER nurse, night shift
 charfact = Martha Bonet | Status | Missing
 charfact = Martha Bonet | Last seen | Trailhead 9, north road
-charfact = Martha Bonet | Hours awake | 96 and counting
-charfact = Martha Bonet | Carries | A satellite phone and a bad feeling
-character = Karl Bonet | 04_karl.png | He told her not to take the shortcut. | Karl knows these woods better than anyone, which is exactly why he's afraid of them. // He keeps a date written on his arm and won't say why. | left | 51.6 22.2 13.2
+character = Karl Bonet | 04_karl.png | He told her not to take the shortcut tonight. | Karl knows these woods better than anyone, which is exactly why he's afraid of them. // He keeps a date written on his arm and won't tell anyone what it means or why. | left | 51.6 22.2 13.2 0.9 0 0 8 50 48.7
 charfact = Karl Bonet | Age | 44
 charfact = Karl Bonet | Status | Unaccounted for
 charfact = Karl Bonet | Last message | Don't take the shortcut.
-character = Bea Bonet | 03_bea.png | It's not the wind. | Bea heard it first. A hum in the trees, like someone singing with their mouth closed. // Nobody believed her until they heard it too. | left | 35.5 22.5 15
+character = Bea Bonet | 03_bea.png | It's not the wind. Bea heard it before anyone. | Bea heard it first. A hum in the trees, like someone singing with their mouth closed. // Nobody believed her until they heard it too. By then it was already too late. | left | 35.5 22.5 15 1.0 -10 0 -12 0 51.4
 charfact = Bea Bonet | Age | 16
 charfact = Bea Bonet | Status | Awake
 charfact = Bea Bonet | Hears | Everything
-character = Ash | 02_ash.png | Some people are paid to watch the woods. He's the one who stopped watching. | Ash has worked these trails longer than he cares to count. He knows every sound the forest makes, and he's sure the humming isn't one of them. // He won't say what he saw at Trailhead 9. He just keeps checking his radio. | left | 36.7 26.7 14
+character = Ash | 02_ash.png | Some people watch the woods. He stopped watching. | Ash has patrolled these trails longer than he cares to count. He knows every sound here. // He won't say what he saw at Trailhead 9. He just keeps one hand on his radio at all times. | left | 36.7 26.7 14 0.9 0 0 28 0 52.8 1 50
 charfact = Ash | Occupation | Park ranger
 charfact = Ash | Status | On patrol
 charfact = Ash | Radio | Silent since dusk
-character = Matt Bonet | 06_matt.png | He just wanted one quiet weekend. | Matt is the youngest of the Bonets and the last to believe any of it. // He keeps his cap low, his headphones on, and his eyes on the ground. It's not working. | left | 66.3 21.8 15.1
+character = Matt Bonet | 06_matt.png | He just wanted one quiet weekend in the woods. | Matt is the youngest of the Bonets and the last of them to believe any of it. // He keeps his cap low, his headphones on, and his eyes on the ground. It's not working. | left | 66.3 21.8 15.1 1 0 0 -18 120 49.6 1.15 -50
 charfact = Matt Bonet | Age | 17
 charfact = Matt Bonet | Status | Missing
 charfact = Matt Bonet | Last seen | Following the humming
-character = Keres | 07_keres.png | Something got into him out there. | Nobody knows where Keres came from, or how long he's been in the trees. // He doesn't blink. He doesn't talk. He just moves toward whoever is still awake. | left | 46.5 26 15
+character = Keres | 07_keres.png | Something got into him out there, long ago. | Nobody knows where Keres came from, or how long he has been out in the trees. // He doesn't blink. He doesn't talk. He just moves toward whoever is still awake. | left | 46.5 26 15 1 0 0 8 0 51.6
 charfact = Keres | Status | Unknown
 charfact = Keres | Threat | Extreme
 charfact = Keres | Last seen | Everywhere
@@ -352,9 +349,10 @@ phoneZoomLabel = Zoom in
 # thumbEyeline = eye height on the little cast thumbnails.   bioEyeline = eye height on the big photo when a character page is open.
 # Every character uses the same two numbers, so all the eyes line up. 33 = rule of thirds. Bigger number = eyes lower down.
 thumbEyeline = 34
-bioEyeline = 36
+bioEyeline = 30
+bioEyelineMobile = 29
 thumbEyeDist = 28
-bioEyeDist = 12
+bioEyeDist = 13
 bioEyeDistMobile = 14
 
 # ---------------------------------------------------------------------------------------------
