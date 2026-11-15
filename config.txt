@@ -120,15 +120,15 @@ navgroup = Updates | news, awards, press
 # Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
 # The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
 # =====================================================================
-showTrailer = false
-showSynopsis = false
+showTrailer = true
+showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
+showStills = true
 showNews = true
-showWatch = false
+showWatch = true
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
