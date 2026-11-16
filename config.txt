@@ -156,7 +156,7 @@ bigScreenMax = 2
 # --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
 # vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
 # pageShade = a dark glow hugging the text and images on the inside pages so they stand out over the photo. 0 = none, 0.8 = default, 1 = solid black.
-pageShade = 0.8
+pageShade = 0.3
 vignette = 0.2
 
 # --- Dark fade at the bottom of the HOME page (hides the cut-off edge of the photo) ---
