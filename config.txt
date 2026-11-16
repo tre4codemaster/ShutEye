@@ -159,6 +159,8 @@ bigScreenMax = 2
 pageShade = 0.8
 # castShade = the same dark glow, only for the Cast page. The photos there are solid, so the glow looks heavier; keep this lower than pageShade. 0 = none.
 castShade = 0.4
+# headerWeight = boldness of the page titles (CAST, SYNOPSIS, NEWS...). 400 = normal, 600 = bold, 700 = bolder, 800 = heaviest.
+headerWeight = 600
 vignette = 0.2
 
 # --- Dark fade at the bottom of the HOME page (hides the cut-off edge of the photo) ---
