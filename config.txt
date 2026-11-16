@@ -127,7 +127,7 @@ showCrew = true
 showStills = true
 showNews = true
 showWatch = true
-showAwards = true
+showAwards = false
 showPress = true
 showContact = true
 
@@ -155,6 +155,8 @@ bigScreenMax = 2
 
 # --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
 # vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
+# pageShade = a dark glow hugging the text and images on the inside pages so they stand out over the photo. 0 = none, 0.8 = default, 1 = solid black.
+pageShade = 0.8
 vignette = 0.2
 
 # --- Dark fade at the bottom of the HOME page (hides the cut-off edge of the photo) ---
@@ -178,7 +180,6 @@ trailerFocus = 50% 50%
 
 # --- TRAILER: paste a YouTube or Vimeo link (the video must allow embedding) ---
 # While this is blank, the Trailer page shows a "coming soon" placeholder player.
-# trailer =
 # (YouTube also works: trailer = https://www.youtube.com/watch?v=XXXXXXXXXXX. Leave the line out or put a # in front for "Coming Soon")
 
 # --- SYNOPSIS (placeholder paragraphs and quick facts are switched off with a # until you have real text; remove the # to turn them on) ---
@@ -186,7 +187,8 @@ trailerFocus = 50% 50%
 # logline = You can sleep when you're dead.
 logline = Some calls you answer. Some calls answer you.
 # One line per paragraph. Add as many as you like.
-synopsis = Coming Soon
+synopsis = PLACEHOLDER: A woman's last night on the trail turns into a fight to stay awake when a signal from a dead phone starts calling her by name. Replace this paragraph with the real first paragraph of your synopsis.
+synopsis = PLACEHOLDER: As the hours pass and the woods close in, she learns that the voice on the line knows more about her than anyone alive. Replace this paragraph with the real second paragraph.
 # Quick facts: fact = Label | Value
 fact = Genre | Horror
 fact = Runtime | 90 min
@@ -299,12 +301,6 @@ news = Nov 12, 2026 | Shuteye website launches | The official site is live. More
 # While no "still =" line is active (no # in front), the Stills page just says Coming Soon.
 # When your photos are ready: upload them, then remove the # in front of each still line below (or add your own).
 # Click a photo to open it large. Arrows, swipe, or keyboard arrows move between photos.
-# still = still1.jpg | Placeholder still 1: the trailhead
-# still = still2.jpg | Placeholder still 2: the call
-# still = still3.jpg | Placeholder still 3: the woods at night
-# still = still4.jpg | Placeholder still 4: the signal
-# still = still5.jpg | Placeholder still 5: don't close your eyes
-# still = still6.jpg | Placeholder still 6: the last light
 
 # --- WATCH: screenings and streaming (page shows "announced soon" while these are empty) ---
 # screening = Date | Event | Location | optional ticket link
@@ -322,7 +318,9 @@ screening = May 7, 2027 | West Coast Premiere (dummy) | Nuart Theatre, Los Angel
 
 # --- PRESS RELEASES (shown on the Press page, newest first): release = Date | Headline | Text | optional link ---
 # These three are DUMMY releases. Replace or delete them.
-release = | Coming Soon |
+release = Feb 18, 2027 | Shuteye Announces Spring Theatrical Screenings | FOR IMMEDIATE RELEASE. PLACEHOLDER: The horror feature Shuteye, starring DJ Qualls, will screen at select theatres across the United States this spring. Replace this with your real announcement.
+release = Jan 20, 2027 | Shuteye Trailer Debuts Online | FOR IMMEDIATE RELEASE. PLACEHOLDER: The first trailer for Shuteye is now streaming. Replace this with your real announcement.
+release = Dec 3, 2026 | Shuteye Completes Principal Photography | FOR IMMEDIATE RELEASE. PLACEHOLDER: Filming has wrapped on Shuteye, an original horror feature. Replace this with your real announcement.
 
 # --- PRESS KIT downloads: download = Label | file name in this folder, or a full https:// link ---
 # download = Poster (high-res) | poster.jpg
