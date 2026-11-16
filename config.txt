@@ -239,6 +239,7 @@ character = Josh | josh.png | 56.6 37.8 17 1.1
 character = Tilly | lilly.png | 50.2 20.4 14.2 0.9
 
 # --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
+crew = Director | Arnaldo Mirabal
 crew = Producer | Carlo Carere
 crew = Producer | Erin Carere
 crew = Associate Producer | Jason Andrew
