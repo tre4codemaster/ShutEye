@@ -120,15 +120,15 @@ navgroup = Updates | news, awards, press
 # Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
 # The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
 # =====================================================================
-showTrailer = false
-showSynopsis = false
+showTrailer = true
+showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
+showStills = true
 showNews = true
-showWatch = false
+showWatch = true
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
@@ -156,6 +156,10 @@ bigScreenMax = 2
 # --- Built-in dark edges + bottom tint (separate from the bottom fade below) ---
 # vignette: 0 = none, 0.2 = light, 0.65 = original strength. Lower this if the page still looks too dark.
 # pageShade = a dark glow hugging the text and images on the inside pages so they stand out over the photo. 0 = none, 0.8 = default, 1 = solid black.
+# logoGlow = OPACITY of the dark glow around the SHUTEYE logo (Home, the ENTER screen and the small one at top left). 0 = none, 0.3 = default, 1 = solid black.
+logoGlow = 0.3
+# logoGlowSize = SIZE of that glow. 1 = normal, 2 = twice as wide, 0.5 = half as wide, 0 = tight against the letters.
+logoGlowSize = 1
 pageShade = 0.8
 # castShade = the same dark glow, only for the Cast page. The photos there are solid, so the glow looks heavier; keep this lower than pageShade. 0 = none.
 castShade = 0.4
@@ -229,14 +233,14 @@ cast = Ken Blackwell | Dr. Daniel Jones | | voice
 #     eyeGap = distance between the two eyes as a percent of the photo width.
 #     zoom 1 = normal, bigger = closer.  sideways = nudge left/right (percent of thumbnail width).  upDown = nudge up/down in pixels.
 #     The page moves every photo so the eyes land on thumbEyeline, set further down.
-character = Martha Bonet | 01_martha.png | 55.6 22.7 15.6 0.90 5 -10
-character = Karl Bonet | 04_karl.png | 51.6 22.2 13.2 0.9 0 0
-character = Bea Bonet | 03_bea.png | 35.5 22.5 15 1.0 -10 0
-character = Ash | 02_ash.png | 36.7 26.7 14 0.9 0 0
-character = Matt Bonet | 06_matt.png | 66.3 21.8 15.1 1 0 0
-character = Keres | 07_keres.png | 46.5 26 15 1 0 0
-character = Josh | josh.png | 56.6 37.8 17 1.1
-character = Tilly | lilly.png | 50.2 20.4 14.2 0.9
+character = Martha Bonet | cast_martha.webp | 55.6 22.7 15.6 0.90 5 -10
+character = Karl Bonet | cast_karl.webp | 51.6 22.2 13.2 0.9 0 0
+character = Bea Bonet | cast_bea.webp | 35.5 22.5 15 1.0 -10 0
+character = Ash | cast_ash.webp | 36.7 26.7 14 0.9 0 0
+character = Matt Bonet | cast_matt.webp | 66.3 21.8 15.1 1 0 0
+character = Keres | cast_keres.webp | 46.5 26 15 1 0 0
+character = Josh | cast_josh.webp | 56.6 37.8 17 1.1
+character = Tilly | cast_tilly.webp | 50.2 20.4 14.2 0.9
 
 # --- CREW: crew = Role | Name  (same role on consecutive lines are grouped together on the page) ---
 crew = Director | Arnaldo Mirabal
