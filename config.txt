@@ -40,7 +40,7 @@ gateLogo = true
 gateLogoWidth = min(46vw, 200px)
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
-logoSound = true
+logoSound = false
 logoSoundVolume = 1
 logoSoundDelay = 0
 # Blank = the built-in sound (a louder version of what_01.mp3). To use a file hosted here instead, upload it next to this file and remove the #:
