@@ -121,6 +121,9 @@ navgroup = Updates | news, awards, press
 # The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
 # =====================================================================
 showTrailer = true
+
+# The Trailer page is replaced by a Coming Soon page (menu word and page). Set to false to bring the trailer page back.
+trailerComingSoon = true
 showSynopsis = true
 showCast = true
 showCrew = true
