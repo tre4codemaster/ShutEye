@@ -124,11 +124,11 @@ showTrailer = true
 showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
+showStills = true
 showNews = true
 showWatch = false
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
