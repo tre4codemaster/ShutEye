@@ -40,7 +40,7 @@ gateLogo = true
 gateLogoWidth = min(46vw, 200px)
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
-logoSound = false
+logoSound = true
 logoSoundVolume = 1
 logoSoundDelay = 0
 # Blank = the built-in sound (a louder version of what_01.mp3). To use a file hosted here instead, upload it next to this file and remove the #:
@@ -120,15 +120,15 @@ navgroup = Updates | news, awards, press
 # Change a word to true or false, commit, and refresh. Hidden pages can't be reached by menu or link.
 # The menu order is fixed: Trailer, Synopsis, Cast, Crew, Stills, News, Watch, Awards, Press, Contact.
 # =====================================================================
-showTrailer = false
-showSynopsis = false
+showTrailer = true
+showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
+showStills = true
 showNews = true
-showWatch = false
+showWatch = true
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
@@ -136,6 +136,33 @@ showContact = true
 
 # --- Logo size on the other pages (1 = original, 1.3 = 30% bigger, 1.6 = 60% bigger) ---
 navLogoScale = 1.3
+
+# --- Phones only: make the small logo on the other pages this many pixels wider (0 = off) ---
+navLogoPhoneAdd = 55
+
+# --- Color of the page titles on the inside pages ---
+headerColor = #efe0bf
+
+# --- Slight depth-of-field blur on the inside-page background, in pixels (0 = sharp) ---
+bgBlur = 3
+
+# --- Size of the page titles (CREW, SYNOPSIS...) on the inside pages (1 = old size, 1.5 = 50% bigger) ---
+headerSize = 1.5
+
+# --- Desktop only: size of the page titles in pixels (headerSize above is used on phones) ---
+headerPx = 22.4
+
+# --- Phones only: size of the page titles in pixels ---
+headerPhonePx = 25
+
+# --- Size of the menu words at the bottom on the inside pages (1 = old size, 1.3 = 30% bigger) ---
+navSize = 1.3
+
+# --- Size of the menu words on desktop, in pixels (Home page AND inside pages) ---
+homeNavSize = 18
+
+# --- Size of "You can sleep when you're dead" on desktop, in pixels (phones keep their own size) ---
+taglineSize = 20
 
 # --- BIG SCREENS (2K / 4K) ---
 # heroLarge = a bigger version of the home photo that is used ONLY on big screens (so phones and laptops stay fast). Upload it to GitHub next to this file.
@@ -160,7 +187,11 @@ bigScreenMax = 2
 logoGlow = 0.3
 # logoGlowSize = SIZE of that glow. 1 = normal, 2 = twice as wide, 0.5 = half as wide, 0 = tight against the letters.
 logoGlowSize = 1
-pageShade = 0.8
+pageShade = 0.1
+# trailerTint = dark tint over the trailer picture. 0 = none (brightest), 0.28 = old look, 1 = solid black.
+trailerTint = 0.1
+# trailerShadow = dark shadow around the trailer picture. 0 = none, 0.7 = old look.
+trailerShadow = 0.35
 # castShade = the same dark glow, only for the Cast page. The photos there are solid, so the glow looks heavier; keep this lower than pageShade. 0 = none.
 castShade = 0.4
 # headerWeight = boldness of the page titles (CAST, SYNOPSIS, NEWS...). 400 = normal, 600 = bold, 700 = bolder, 800 = heaviest.
@@ -213,14 +244,14 @@ castPhotos = true
 # --- CAST: cast = Actor Name | Character | photo file (the photo is OPTIONAL, only use it for a custom file name) ---
 # Hide one actor: put a # at the start of their line.
 # Voice talent: add  |  |  voice  at the end of the line (no photo box, just a name card). Example: cast = Actor Name | Character | | voice
-cast = Erin Carere | Martha Bonet
-cast = Riona Lally | Bea Bonet
+cast = Erin Carere | Martha Bonet | portrait_martha.webp
+cast = Riona Lally | Bea Bonet | portrait_bea.webp
 cast = Zac Titus | Karl Bonet
-cast = Macleay Bolgatz | Matt Bonet
-cast = DJ Qualls | Ash
-cast = Carlo Carere | Keres
-cast = Raiden Kam | Josh
-cast = Susan Chambers | Tilly
+cast = Macleay Bolgatz | Matt Bonet | portrait_matt.webp
+cast = DJ Qualls | Ash | portrait_ash.webp
+cast = Carlo Carere | Keres | portrait_keres.webp
+cast = Raiden Kam | Josh | portrait_josh.webp
+cast = Susan Chambers | Tilly | portrait_tilly.webp
 cast = James Vallo | Radio Announcer | | voice
 cast = Anzu Lawson | Dr. Michelle Fowler | | voice
 cast = Ken Blackwell | Dr. Daniel Jones | | voice
@@ -303,6 +334,14 @@ castRows = 4, 4, 3
 
 # --- NEWS (newest first): news = Date | Headline | Text | optional link ---
 news = Nov 12, 2026 | Shuteye website launches | The official site is live. More news soon.
+news = Dec 20, 2025 | Picture lock | Picture Lock with editor Ken Blackwell (“The Nun,” “The Expendables,” “Pet Semetary.”)
+news = Nov 2025 | Official end credits song announced | “Don’t Close Your Eyes” by Anzu Lawson is announced as the official end credits (and only “song”) to appear in “ShutEye.”
+news = Jun 21, 2025 | That’s a wrap | ShutEye is in the can! Principal filming complete.
+news = Jun 2, 2025 | Principal filming begins | Principal filming begins at Mystery Ridge Movie Ranch in Coeur d’Alene, Idaho.
+news = May 4, 2025 | DJ Qualls joins as Ash | DJ Qualls officially announced as “Ash” in the apocalyptic thriller, “ShutEye.”
+news = Feb 2025 | Composer announced | Andrea Possee officially announced as composer for “ShutEye.”
+news = Sep 2024 | Location scouting | The producing team scouts locations for the upcoming thriller, “ShutEye.”
+news = May 2024 | Director of Photography attached | Director of Photography Dan Ayers (“Avatar,” “NCIS,” and so many more) is attached to “ShutEye.”
 
 # --- STILLS (photo gallery): still = file name | Caption ---
 # Upload your photos to the same GitHub folder as this file. To swap a placeholder,
