@@ -124,14 +124,14 @@ showTrailer = true
 
 # The Trailer page is replaced by a Coming Soon page (menu word and page). Set to false to bring the trailer page back.
 trailerComingSoon = true
-showSynopsis = true
+showSynopsis = false
 showCast = true
 showCrew = true
-showStills = true
+showStills = false
 showNews = true
 showWatch = false
 showAwards = false
-showPress = true
+showPress = false
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
