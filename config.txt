@@ -40,11 +40,11 @@ gateLogo = true
 gateLogoWidth = min(46vw, 200px)
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
-logoSound = false
+logoSound = true
 logoSoundVolume = 1
 logoSoundDelay = 0
-# Blank = the built-in sound (a louder version of what_01.mp3). To use a file hosted here instead, upload it next to this file and remove the #:
-# logoSoundFile = what_01.mp3
+# The logo sound file (upload it next to this file). Only plays when logoSound = true.
+logoSoundFile = shut_01.mp3
 
 # --- Home photo movement ---
 # heroMotion = false: the photo stays still and just dissolves in. true = it slowly drifts/zooms while it appears.
