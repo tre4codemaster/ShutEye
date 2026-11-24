@@ -40,7 +40,7 @@ gateLogo = true
 gateLogoWidth = min(46vw, 200px)
 # --- Logo sound: plays ONCE when the Shuteye logo appears (never loops) ---
 # logoSound: true/false to turn it on or off. logoSoundVolume: 0 to 1. logoSoundDelay: seconds after the logo starts.
-logoSound = true
+logoSound = false
 logoSoundVolume = 1
 logoSoundDelay = 0
 # Blank = the built-in sound (a louder version of what_01.mp3). To use a file hosted here instead, upload it next to this file and remove the #:
@@ -113,7 +113,7 @@ debug = false
 # Page names: trailer synopsis cast crew stills news watch awards press contact
 # navGroups = false turns ALL grouping off (flat menu, like before).
 navGroups = true
-navgroup = Film | trailer, synopsis, cast, crew, stills
+navgroup = Film | synopsis, cast, crew, stills
 navgroup = Updates | news, awards, press
 
 # SHOW OR HIDE EACH PAGE: true = it is in the menu, false = hidden.
@@ -126,7 +126,7 @@ showCast = true
 showCrew = true
 showStills = true
 showNews = true
-showWatch = true
+showWatch = false
 showAwards = false
 showPress = true
 showContact = true
@@ -145,6 +145,9 @@ headerColor = #efe0bf
 
 # --- Slight depth-of-field blur on the inside-page background, in pixels (0 = sharp) ---
 bgBlur = 3
+
+# --- How visible the forest background is on the inside pages (1 = full, 0.75 = 25% fainter, 0 = black) ---
+bgOpacity = 0.75
 
 # --- Size of the page titles (CREW, SYNOPSIS...) on the inside pages (1 = old size, 1.5 = 50% bigger) ---
 headerSize = 1.5
@@ -362,9 +365,9 @@ news = May 2024 | Director of Photography attached | Director of Photography Dan
 # --- WATCH: screenings and streaming (page shows "announced soon" while these are empty) ---
 # screening = Date | Event | Location | optional ticket link
 # DUMMY screenings at real venues. The events and dates are made up, so replace or delete them.
-screening = Mar 12, 2027 | Premiere Screening + Q&A (dummy) | IFC Center, New York, NY | https://example.com/tickets
-screening = Apr 9, 2027 | Midnight Screening (dummy) | Music Box Theatre, Chicago, IL | https://example.com/tickets
-screening = May 7, 2027 | West Coast Premiere (dummy) | Nuart Theatre, Los Angeles, CA | https://example.com/tickets
+# screening = Mar 12, 2027 | Premiere Screening + Q&A (dummy) | IFC Center, New York, NY | https://example.com/tickets
+# screening = Apr 9, 2027 | Midnight Screening (dummy) | Music Box Theatre, Chicago, IL | https://example.com/tickets
+# screening = May 7, 2027 | West Coast Premiere (dummy) | Nuart Theatre, Los Angeles, CA | https://example.com/tickets
 # screening = Mar 14, 2027 | World Premiere | Your Festival, City | https://tickets.example.com
 # stream = Watch on Vimeo | https://vimeo.com/
 # stream = Watch on Amazon | https://amazon.com/
@@ -375,9 +378,9 @@ screening = May 7, 2027 | West Coast Premiere (dummy) | Nuart Theatre, Los Angel
 
 # --- PRESS RELEASES (shown on the Press page, newest first): release = Date | Headline | Text | optional link ---
 # These three are DUMMY releases. Replace or delete them.
-release = Feb 18, 2027 | Shuteye Announces Spring Theatrical Screenings | FOR IMMEDIATE RELEASE. PLACEHOLDER: The horror feature Shuteye, starring DJ Qualls, will screen at select theatres across the United States this spring. Replace this with your real announcement.
-release = Jan 20, 2027 | Shuteye Trailer Debuts Online | FOR IMMEDIATE RELEASE. PLACEHOLDER: The first trailer for Shuteye is now streaming. Replace this with your real announcement.
-release = Dec 3, 2026 | Shuteye Completes Principal Photography | FOR IMMEDIATE RELEASE. PLACEHOLDER: Filming has wrapped on Shuteye, an original horror feature. Replace this with your real announcement.
+# release = Feb 18, 2027 | Shuteye Announces Spring Theatrical Screenings | FOR IMMEDIATE RELEASE. PLACEHOLDER: The horror feature Shuteye, starring DJ Qualls, will screen at select theatres across the United States this spring. Replace this with your real announcement.
+# release = Jan 20, 2027 | Shuteye Trailer Debuts Online | FOR IMMEDIATE RELEASE. PLACEHOLDER: The first trailer for Shuteye is now streaming. Replace this with your real announcement.
+# release = Dec 3, 2026 | Shuteye Completes Principal Photography | FOR IMMEDIATE RELEASE. PLACEHOLDER: Filming has wrapped on Shuteye, an original horror feature. Replace this with your real announcement.
 
 # --- PRESS KIT downloads: download = Label | file name in this folder, or a full https:// link ---
 # download = Poster (high-res) | poster.jpg
