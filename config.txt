@@ -46,6 +46,9 @@ logoSoundDelay = 0
 # The logo sound file (upload it next to this file). Only plays when logoSound = true.
 logoSoundFile = shut_01.mp3
 
+# The logo sound repeats continuously. false = plays once.
+logoSoundLoop = true
+
 # --- Home photo movement ---
 # heroMotion = false: the photo stays still and just dissolves in. true = it slowly drifts/zooms while it appears.
 heroMotion = false
@@ -124,14 +127,14 @@ showTrailer = true
 
 # The Trailer page is replaced by a Coming Soon page (menu word and page). Set to false to bring the trailer page back.
 trailerComingSoon = true
-showSynopsis = false
+showSynopsis = true
 showCast = true
 showCrew = true
-showStills = false
+showStills = true
 showNews = true
 showWatch = false
 showAwards = false
-showPress = false
+showPress = true
 showContact = true
 
 # --- Background photo for all inner pages (blank/commented = built-in photo) ---
