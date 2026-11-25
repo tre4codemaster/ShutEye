@@ -183,7 +183,7 @@ castBg = cast_pano.jpg
 # Other pages: background picture (static, sits behind the content window). Comment out to go back to the drifting cast_pano forest.
 # pageBg = page_bg.jpg   <- a still picture for the other pages. Leave this line commented out (with the #) to use the slowly drifting Cast forest instead.
 pagePan = true
-pagePanSecs = 240
+pagePanSecs = 180
 
 # --- CAST page: the BIGGEST a cast name can be, in pixels. Every name is the same size. If the longest name would be wider than the SHUTEYE logo, all names shrink together to fit ---
 castNameSize = 54
