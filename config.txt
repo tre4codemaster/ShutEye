@@ -17,7 +17,10 @@ showLinks = false
 tagline = You can sleep when | you're dead.
 # The | splits the tagline into two lines on phones only (on desktop it stays one line). Remove the | for no split.
 # Box under the tagline (set showBadge = false above to hide it, or change the words here)
-badgeText = Coming Soon
+# Home: lines the logo up with the axe in the artwork and scales everything together. false = old layout.
+axeAlign = true
+
+badgeText =
 
 # --- Label shown on placeholder stills, cast photos and the trailer box ---
 comingSoon = Coming Soon
@@ -127,7 +130,7 @@ showTrailer = true
 
 # The Trailer page is replaced by a Coming Soon page (menu word and page). Set to false to bring the trailer page back.
 trailerComingSoon = true
-showSynopsis = false
+showSynopsis = true
 showCast = true
 showCrew = true
 showStills = true
@@ -169,6 +172,13 @@ navSize = 1.3
 
 # --- Size of the menu words on desktop, in pixels (Home page AND inside pages) ---
 homeNavSize = 18
+
+# --- CAST page: each person stays on screen this many seconds while it plays by itself, first to last. Swiping or the arrows jump ahead. 0 = no autoplay ---
+castAuto = 5
+
+# --- CAST page: true = use the cutout files (cutout_<name>.webp, made from each portrait_<name> file, in the repo root). The background is your normal inner-page background (shut_bg). Optional: castBg = a wide forest picture to use instead ---
+castCutouts = true
+castBg = cast_pano.jpg
 
 # --- CAST page: the BIGGEST a cast name can be, in pixels. Every name is the same size. If the longest name would be wider than the SHUTEYE logo, all names shrink together to fit ---
 castNameSize = 54
