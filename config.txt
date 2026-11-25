@@ -179,11 +179,11 @@ castAuto = 5
 # --- CAST page: true = use the cutout files (cutout_<name>.webp, made from each portrait_<name> file, in the repo root). The background is your normal inner-page background (shut_bg). Optional: castBg = a wide forest picture to use instead ---
 castCutouts = true
 castBg = cast_pano.jpg
-# Other pages: use the same forest as the background and slowly drift it left to right. pagePan = true/false, pagePanSecs = seconds for the one slow sweep from left to right
+# Other pages: use the same forest as the background and slowly drift it left to right. pagePan = true/false, pagePanSecs = seconds for one slow sweep (it drifts across, then back, forever)
 # Other pages: background picture (static, sits behind the content window). Comment out to go back to the drifting cast_pano forest.
-pageBg = page_bg.jpg
+# pageBg = page_bg.jpg   <- a still picture for the other pages. Leave this line commented out (with the #) to use the slowly drifting Cast forest instead.
 pagePan = true
-pagePanSecs = 200
+pagePanSecs = 240
 
 # --- CAST page: the BIGGEST a cast name can be, in pixels. Every name is the same size. If the longest name would be wider than the SHUTEYE logo, all names shrink together to fit ---
 castNameSize = 54
