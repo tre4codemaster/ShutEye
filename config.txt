@@ -203,7 +203,7 @@ heroLargeFrom = 0
 # NOTE: "width" here is the browser window width in CSS pixels. If your 4K monitor uses Windows/Mac display scaling (125%, 150%...), the window is narrower than 3840, so it grows a bit less.
 # To see the real number, set debug = true below: a red note on the page shows the window size and the growth.
 bigScreen = true
-bigScreenFrom = 2560
+bigScreenFrom = 1920
 bigScreenAt = 3840
 bigScreenMax = 2
 
